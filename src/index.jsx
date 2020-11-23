@@ -1,6 +1,7 @@
 import { render } from 'react-dom';
 import Plan from './Plan.jsx'
 import './index.html';
+import './style.css';
 import React, { useState } from "react";
 import { initialState, doTurn } from "./State";
 
@@ -13,8 +14,8 @@ const App = () => {
       <h1>Mensch, nezlob se!</h1>
       <div>
         {" "}
-        Táhne hráč: {state.player}{" "}
-        <button onClick={() => setState(doTurn(state, 1, 1))}>Tah</button>{" "}
+        <p>Táhne hráč:<span className={`player-${state.player}`}>{state.player}</span> {" "}{state.dice ? `Kostka ukazuje ${state.dice}` : ''}</p>
+  <button onClick={() => setState(doTurn(state, 1, 1))}>{ state.dice ? 'Táhni' : 'Házej' }</button>{" "}
       </div>
       <Plan state={state} />
       <h2>Start editing to see some magic happen!</h2>

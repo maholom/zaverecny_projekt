@@ -13,10 +13,10 @@ const App = () => {
       <h1>Mensch, nezlob se!</h1>
       <div>
         {" "}
-        Táhne hráč: {state.onTurn}{" "}
+        Táhne hráč: {state.player}{" "}
         <button onClick={() => setState(doTurn(state, 1, 1))}>Tah</button>{" "}
       </div>
-      <Plan fields={state.fields} />
+      <Plan state={state} />
       <h2>Start editing to see some magic happen!</h2>
     </div>
   );

@@ -1,0 +1,50 @@
+const objektOtazek = {
+{id: 1, 
+  otazka: 'Když potkáš na sjezdovce kamaráda, jak ho pozdravíš?',
+  a: {
+  text: 'Tschüss',
+  hodnota: false,
+  },
+  b: {
+  text: 'Hallo',
+  hodnota: true,
+  }, 
+  c: {
+  text: 'Guten Tag',
+  hodnota: false,
+  }, 
+};
+
+{id: 2, 
+  otazka: 'Na čem si pochutnáš, když si objednáš Kaiserschmarrn?',
+  a: {
+  text: 'Na sladkém trhanci',
+  hodnota: true,
+  },
+  b: {
+  text: 'Na hovězím vývaru',
+  hodnota: false,
+  }, 
+  c: {
+  text: 'Na císařské roštěné',
+  hodnota: false,
+  }, 
+},
+
+{id: 3, 
+  otazka: 'Kde se naučíš lyžovat? Jak se řekne lyžařská škola?',
+  a: {
+  text: 'Schneeschule',
+  hodnota: false,
+  },
+  b: {
+  text: 'Skischule',
+  hodnota: true,
+  }, 
+  c: {
+  text: 'Fahrschule',
+  hodnota: false,
+  }, 
+},
+};
+

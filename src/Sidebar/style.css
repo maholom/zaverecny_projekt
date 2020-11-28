@@ -1,0 +1,10 @@
+
+.new-game {
+  background-color: #cc2c00;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600px;
+  border-radius: 20px;
+}

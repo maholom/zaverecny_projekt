@@ -2,7 +2,7 @@ import React from 'react';
 import { Figure } from './Figure';
 import { isPlayerInGame } from './state';
 
-const Plan = (props) => {
+export const Plan = (props) => {
   const fields = props.state.fields;
 
   return (
@@ -40,7 +40,7 @@ const Plan = (props) => {
           position=".3245 -.02986 .03763 .34823 74.592 -186.353"
         />
 
-        <Figure
+        {/* <Figure
           player={isPlayerInGame(props.state, 1) ? 0 : 1}
           position=".3245 -.02986 .03763 .34823 -106.801 -236.76"
         />
@@ -48,10 +48,9 @@ const Plan = (props) => {
         <Figure
           player={isPlayerInGame(props.state, 2) ? 0 : 2}
           position=".3245 -.02986 .03763 .34823 -97.297 -198.233"
-        />
+        /> */}
       </g>
     </svg>
   );
 };
 
-export default Plan;

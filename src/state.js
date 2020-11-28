@@ -1,7 +1,8 @@
 export const initialState = {
+  started: true,
   player: 1,
-  dice: null,
-  fields: [0, 0, 0, 0, 0],
+  dice: 2,
+  fields: [1, 0, 2, 0, 0],
 };
 
 export const isPlayerInGame = (state, player) =>
@@ -9,6 +10,11 @@ export const isPlayerInGame = (state, player) =>
 
 export const getPosition = (state, player) =>
   state.fields.findIndex((p) => p === player);
+
+export const setStarted = (state, started) => ({
+  ...initialState,
+  started: started
+});
 
 export const doTurn = (state) => {
   if (state.dice === null) {

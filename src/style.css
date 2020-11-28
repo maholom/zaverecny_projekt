@@ -1,18 +1,24 @@
 .plan {
-  background-image: url(./Podklady_svg/Pozadi_vybrane.svg);
+  background-image: url(./Podklady_svg/pozadi.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100vw;
+  /* width: 100vw; */
+  width: 400px;
+  height: 400px;
 }
 
 .button {
   margin: 1em;
 }
 
+.bubble {
+  border: 2px solid gray;
+}
+
 .player-1 {
-  color: red;
+  border-color: red;
 }
 
 .player-2 {
-  color: #439a86ff;
+  border-color: #439a86ff;
 }

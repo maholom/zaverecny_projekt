@@ -1,0 +1,7 @@
+- Welcome screen
+- design sidebaru (vyexportovat lyzare, kostku)
+
+
+- zobrazování kvízu
+- vyhazování
+- konec hry

@@ -1,13 +1,14 @@
-- Welcome screen
+- Welcome screen 
 - design sidebaru
   - zobazit kostku
   - zobrazit domecek
-  - bublina
+
 - zobrazování kvízu - OK
 - design quizu
 - nahodne lozovani otazek
 - lepsi texty do quizu i sidebaru
 
+- bublina v sidebaru
 - vyhazování
 - konec hry
 - animace pohybu hrace

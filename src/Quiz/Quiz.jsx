@@ -5,7 +5,7 @@ import { Snowman } from "../Snowman/Snowman.jsx";
 import "./style.css";
 
 export const Quiz = ({ state, setState }) => {
-  const question = questions[0];
+  const question = questions[Math.round(Math.random() * (questions.length - 1))];
   const [answerId, setAnswerId] = useState(null);
   const answer = answerId !== null ? question.answers[answerId] : null;
 
@@ -13,7 +13,7 @@ export const Quiz = ({ state, setState }) => {
     <div className="shade">
       <div className="popup">
         <h2>QUIZ</h2>
-        Padlo ti {state.dice}, ale aby ti to jelo ukaž že na to máš ...
+        Hodil jsi {state.dice}. Chceš frčet dál? Odpověz správně: ...
         <br />
         {question.text}
         <br />
@@ -34,8 +34,8 @@ export const Quiz = ({ state, setState }) => {
         <br />
         {answer
           ? answer.value
-            ? "To jsi dal/a"
-            : "Tak to jsi nedal/a"
+            ? "Gratulujeme!"
+            : "Špatná odpověď. Zkus to příště!"
           : "Vyber odpověď"}
         <br />
         {answer ? (
@@ -45,7 +45,7 @@ export const Quiz = ({ state, setState }) => {
                 setState(doTurn(setQuiz(state, answer.value)));
               }}
             >
-              {answer.value ? "Táhni" : "Nech kamráda"}
+              {answer.value ? "Odraž se a jeď!" : "Hraje kamarád!"}
             </button>
           </>
         ) : null}

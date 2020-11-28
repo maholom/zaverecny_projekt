@@ -1,11 +1,13 @@
 import React from 'react';
+import { Snowman } from '../Snowman/Snowman';
 import './style.css';
 
 export const Welcome = ({startGame}) => {
 
 return (
+  <>
 <div className='welcome'>
-<p className="bubble thought">Pravidla/Spielregeln<br/>
+<p className="bubble ocas">Pravidla/Spielregeln<br/>
 <br/>
 Herzlich willkommen - Srdečně vítej! Připravili jsme pro tebe hru, kde si procvičíš němčinu, potrápíš nervy při vyhazování a naučíš se pár nových slovíček.<br/>
 <br/>
@@ -13,7 +15,17 @@ Hrají dva lyžaři. Rozdělte si, kdo bude červený a zelený sjezdař. Padne-
 <br/>
 A teď už jen: hurá do Alp!</p>
 
-<button className="bublina speech" onClick={startGame}>START</button>
 </div>
+
+<div className='container'>
+  <div className='left-side'>
+    <Snowman className='snowman-uvodni' />
+  <div className='rigth-side'>
+<button className="bublina speech" onClick={startGame}>START</button>
+
+  </div>
+  </div>
+  </div>
+</>
     );
   };

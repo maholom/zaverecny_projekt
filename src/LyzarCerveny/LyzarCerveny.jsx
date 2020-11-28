@@ -1,15 +1,14 @@
-import React from "react";
+import React from 'react';
 
-export const LyzarCerveny = () => {
+export const LyzarCerveny = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="svg8"
-      width="210mm"
-      height="297mm"
       version="1.1"
-      viewBox="0 0 210 297"
+      viewBox="0 0 70 70"
+      className={props.className}
     >
       <defs id="defs2">
         <linearGradient id="linearGradient1479">
@@ -40,7 +39,7 @@ export const LyzarCerveny = () => {
       <g id="layer1">
         <g id="g1081">
           <ellipse
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="ellipse1639"
             cx="40.329"
             cy="13.054"
@@ -51,7 +50,7 @@ export const LyzarCerveny = () => {
             transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
           ></ellipse>
           <path
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="path1641"
             fill="#cc2c00"
             fillOpacity="1"
@@ -61,14 +60,14 @@ export const LyzarCerveny = () => {
             d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
           ></path>
           <path
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="path1643"
             fill="#030104"
             strokeWidth="0.723"
             d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
           ></path>
           <path
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="path1645"
             fill="none"
             stroke="#030104"
@@ -83,6 +82,4 @@ export const LyzarCerveny = () => {
       <style id="style12"></style>
     </svg>
   );
-}
-
-
+};

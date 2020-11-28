@@ -15,3 +15,11 @@
 .snowflake {
   flex: 1 1 50%;
 }
+
+.home-lyzari {
+  display: flex;
+}
+.lyzar-cerveny1,
+.lyzar-zeleny1 {
+  flex: 1 1 50%;
+}

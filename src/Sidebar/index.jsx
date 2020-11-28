@@ -1,6 +1,8 @@
 import React from 'react';
 import { setStarted, isPlayerInGame, doTurn, isOverflowAlert } from '../state';
 import { Snowflake } from '../Snowflake/Snowflake.jsx';
+import { LyzarCerveny } from '../LyzarCerveny/LyzarCerveny.jsx';
+import { LyzarZeleny } from '../LyzarZeleny/LyzarZeleny.jsx';
 import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
@@ -14,8 +16,8 @@ export const Sidebar = ({ state, setState }) => {
       : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
     action = 'Hoď kostkou';
   } else if (inGame && isOverflowAlert(state)) {
-    label='Hodil jsi moc.'
-    action='Hraje kámoš!'
+    label = 'Hodil jsi moc.';
+    action = 'Hraje kámoš!';
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
     label = 'Pusť se do kvízu!'; // pomocny stav
@@ -39,10 +41,18 @@ export const Sidebar = ({ state, setState }) => {
         Nová hra
       </button>
       <div>
-        Červený {isPlayerInGame(state, 1) ? 'NE' : 'ANO'}
-        <br />
-        Zelený {isPlayerInGame(state, 2) ? 'NE' : 'ANO'}
-        <br />
+        <div className="home-lyzari">
+          {isPlayerInGame(state, 1) ? (
+            ''
+          ) : (
+            <LyzarCerveny className="lyzar-cerveny1" />
+          )}
+          {isPlayerInGame(state, 2) ? (
+            ''
+          ) : (
+            <LyzarZeleny className="lyzar-zeleny1" />
+          )}
+        </div>
         <div className="homes">
           <Snowflake />
           <Snowflake />

@@ -1,19 +1,18 @@
-const poleOtazek = [
+export const questions = [
   {
-    id: 1,
-    otazka: 'Když potkáš na sjezdovce kamaráda, jak ho pozdravíš?',
-    a: {
+    text: 'Když potkáš na sjezdovce kamaráda, jak ho pozdravíš?',
+    answers: [{
       text: 'Tschüss',
-      hodnota: false,
+      value: false,
     },
-    b: {
+    {
       text: 'Hallo',
-      hodnota: true,
+      value: true,
     },
-    c: {
+    {
       text: 'Guten Tag',
-      hodnota: false,
-    },
+      value: false,
+    }],
   },
 
   {

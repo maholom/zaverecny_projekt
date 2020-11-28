@@ -1,7 +1,13 @@
 - Welcome screen
-- design sidebaru (vyexportovat lyzare, kostku)
+- design sidebaru
+  - zobazit kostku
+  - zobrazit domecek
+  - bublina
+- zobrazování kvízu - OK
+- design quizu
+- nahodne lozovani otazek
+- lepsi texty do quizu i sidebaru
 
-
-- zobrazování kvízu
 - vyhazování
 - konec hry
+- animace pohybu hrace

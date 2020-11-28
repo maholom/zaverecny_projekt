@@ -1,8 +1,9 @@
 export const initialState = {
-  started: true,
+  started: false,
   player: 1,
-  dice: 2,
-  fields: [1, 0, 2, 0, 0],
+  dice: null,
+  quiz: null,  // null - nebyl vyplnen, true - uspech, false - neuspech
+  fields: [0, 0, 0, 0, 0],
 };
 
 export const isPlayerInGame = (state, player) =>
@@ -16,6 +17,11 @@ export const setStarted = (state, started) => ({
   started: started
 });
 
+export const setQuiz = (state, result) => ({
+  ...state,
+  quiz: result
+});
+
 export const doTurn = (state) => {
   if (state.dice === null) {
     return {
@@ -27,8 +33,9 @@ export const doTurn = (state) => {
   const inGame = isPlayerInGame(state, state.player);
   const currentPosition = getPosition(state, state.player);
 
-  let targetPosition;
-  if (inGame) {
+  let targetPosition = currentPosition;
+
+  if (inGame && state.quiz === true) {
     //táhnu
     targetPosition = currentPosition + state.dice;
   } else if (state.dice === 3) {
@@ -36,12 +43,11 @@ export const doTurn = (state) => {
     targetPosition = 0;
   }
 
-  console.log('Háč je na ', currentPosition);
-  console.log('Háč půjde na ', targetPosition);
   return {
     ...state,
-    dice: null,
     player: state.player === 1 ? 2 : 1,
+    dice: null,
+    quiz: null,
     fields: state.fields.map((x, i) =>
       i === targetPosition ? state.player : state.player === x ? 0 : x,
     ),

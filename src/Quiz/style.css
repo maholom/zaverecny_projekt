@@ -1,0 +1,36 @@
+.shade {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popup {
+  position: fixed;
+  width: 300px;
+  /* height: 300px; */
+  background: white;
+  left: calc(50% - 150px);
+  top: calc(40% - 150px);
+}
+
+.snowmanQuiz {
+  width: 30px;
+  border-radius: 30px;
+}
+
+.wrong {
+  background: red;
+}
+
+.right {
+  background: green;
+}
+.answer {
+  border: 1px solid gray;
+}
+.selected {
+  border-color: blue;
+}

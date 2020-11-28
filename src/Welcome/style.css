@@ -7,17 +7,12 @@ p.bubble {
   background-color: #cc2c00;
   border: 2px solid rgb(78, 77, 77);
   border-radius: 30px;
-  font-family: sans-serif;
+  font-family: 'Roboto';
   padding: 20px;
   font-size: large;
   color: white;
 }
 
-p.thought {
-  max-width: 800px;
-  border-radius: 200px;
-  padding: 30px;
-}
 
 p.bubble:before,
 p.bubble:after {
@@ -27,27 +22,18 @@ p.bubble:after {
   height: 0;
 }
 
-p.thought:before,
-p.thought:after {
-  left: 10px;
-  bottom: -30px;
-  width: 40px;
-  height: 40px;
-  background-color: #cc2c00;
-  border: 2px solid rgb(78, 77, 77);
-  -webkit-border-radius: 28px;
-  -moz-border-radius: 28px;
-  border-radius: 28px;
+p.ocas:before {
+	left: 30px;
+	bottom: -50px;
+	border: 25px solid;
+	border-color: #cc2c00 transparent transparent #cc2c00;
 }
 
-p.thought:after {
-  width: 20px;
-  height: 20px;
-  left: 5px;
-  bottom: -40px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  border-radius: 18px;
+p.ocas:after {
+	left: 38px;
+	bottom: -30px;
+	border: 15px solid;
+	border-color: #cc2c00 transparent transparent #cc2c00;
 }
 
 button.bublina {
@@ -84,4 +70,9 @@ button.speech:after {
   bottom: -30px;
   border: 15px solid;
   border-color: #16502d transparent transparent #16502d;
+}
+
+.snowman-uvodni {
+  width: 500px;
+  height: 700px;
 }

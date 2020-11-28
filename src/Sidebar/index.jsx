@@ -9,19 +9,19 @@ export const Sidebar = ({ state, setState }) => {
   let action;
   if (state.dice === null) {
     // kostka je prázdná
-    label = inGame ? 'Táhni' : 'Budeš vyjíždět?';
+    label = inGame ? 'Připrav se na kvíz' : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
     action = 'Hoď kostkou';
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
-    label = 'Vyplň quiz'; // pomocny stav
+    label = 'Pusť se do kvízu!'; // pomocny stav
     action = 'Máš okno';
   } else if (inGame) {
-    action = 'Táhni';
+    action = 'Odstrč se a jeď!';
   } else if (state.dice === 3) {
-    label = 'Nasazuješ';
+    label = 'Padla ti šestka. Připrav se na start!';
     action = 'Zahájit sjezd';
   } else {
-    label = 'Máš smúlu, hraje kamarád';
+    label = 'Potřebuješ šestku. Hraje kamarád';
     action = 'Ok';
   }
 
@@ -39,8 +39,9 @@ export const Sidebar = ({ state, setState }) => {
         <br />
         Zelený {isPlayerInGame(state, 2) ? 'NE' : 'ANO'}
         <br />
-        <div>
-          <Snowflake /> Domeček
+        <div className="homes">
+          <Snowflake /> 
+          <Snowflake />
         </div>
         {state.dice ? `Kostka ukazuje ${state.dice}` : ''}
         <div className={`bubble player-${state.player}`}>

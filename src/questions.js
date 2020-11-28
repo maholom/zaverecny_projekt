@@ -16,8 +16,7 @@ export const questions = [
   },
 
   {
-    id: 2,
-    otazka: 'Na čem si pochutnáš, když si objednáš Kaiserschmarrn?',
+    text: 'Na čem si pochutnáš, když si objednáš Kaiserschmarrn?',
     a: {
       text: 'Na sladkém trhanci',
       hodnota: true,

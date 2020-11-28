@@ -8,7 +8,7 @@ export const Snowman = (props) => {
       id="svg2648"
       version="1.1"
       viewBox="0 0 70 80"
-      className={`snowmanQuiz ${props.sign}`}
+      className={`snowman-uvodni snowmanQuiz ${props.sign}`} 
     >
       <defs id="defs2642">
         <linearGradient id="linearGradient1479">

@@ -8,3 +8,11 @@
   font-weight: 600px;
   border-radius: 20px;
 }
+
+.homes {
+  display: flex;
+}
+
+.snowflake {
+  flex-basis: 1 1 50%;
+}

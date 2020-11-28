@@ -6,7 +6,7 @@ import { isPlayerInGame } from "../state";
 
 export const Game = ({ state, setState }) => {
   const inGame = isPlayerInGame(state, state.player);
-
+  
   return (
     <>
       <Plan state={state} />

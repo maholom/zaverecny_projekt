@@ -1,18 +1,20 @@
-- Welcome screen 
+- Welcome screen CSS
 - design sidebaru
-  - zobazit kostku
-  - zobrazit domecek
+  - zobazit kostku videostop (const Dice 1-6 zobrazi)
+  - zobrazit domecek s lyzari
 
 - design quizu
-- nahodne lozovani otazek
-- lepsi texty do quizu i sidebaru
+-finishSideBar komponenta (bedny vítěze)
 
-- bublina v sidebaru
-- vyhazování
-- konec hry
+
 - animace pohybu hrace
+- animace roztáčení kostky
+
+- uklidit komponenty! Soňa
 
 
 ---- NICE TO HAVE
 - zahazovat pouzite otazky
 - po vyhozeni nejakou hlasku
+- snezeni
+- audio doprovod

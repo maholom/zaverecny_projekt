@@ -1,9 +1,9 @@
 export const initialState = {
-  started: true,
+  started: false,
   player: 1,
-  dice: 2,
+  dice: null,
   quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
-  fields: [2, 0, 1, 0, 0],
+  fields: [0, 0, 0, 0, 0],
 };
 
 export const isPlayerInGame = (state, player) =>
@@ -20,6 +20,13 @@ export const isFinishAlert = (state) => {
   const nextPos = pos + state.dice;
   return state.fields.length - 1 === nextPos;
 };
+
+export const isOverflowAlert = (state) => {
+  const pos = getPosition(state, state.player);
+  const nextPos = pos + state.dice;
+  return nextPos > state.fields.length - 1;
+};
+
 export const getPosition = (state, player) =>
   state.fields.findIndex((p) => p === player);
 
@@ -46,10 +53,10 @@ export const doTurn = (state) => {
 
   let targetPosition = currentPosition;
 
-  if (inGame && state.quiz === true) {
+  if (inGame && (state.quiz === true || !isOverflowAlert(state))) {
     //táhnu
     targetPosition = currentPosition + state.dice;
-  } else if (state.dice === 3) {
+  } else if (!inGame && state.dice === 3) {
     //nasazuju
     targetPosition = 0;
   }

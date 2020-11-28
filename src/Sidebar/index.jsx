@@ -1,5 +1,5 @@
 import React from 'react';
-import { setStarted, isPlayerInGame, doTurn } from '../state';
+import { setStarted, isPlayerInGame, doTurn, isOverflowAlert } from '../state';
 import { Snowflake } from '../Snowflake/Snowflake.jsx';
 import './style.css';
 
@@ -13,6 +13,9 @@ export const Sidebar = ({ state, setState }) => {
       ? 'Připrav se na kvíz'
       : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
     action = 'Hoď kostkou';
+  } else if (inGame && isOverflowAlert(state)) {
+    label='Hodil jsi moc.'
+    action='Hraje kámoš!'
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
     label = 'Pusť se do kvízu!'; // pomocny stav

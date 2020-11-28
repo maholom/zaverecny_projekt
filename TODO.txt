@@ -3,7 +3,6 @@
   - zobazit kostku
   - zobrazit domecek
 
-- zobrazování kvízu - OK
 - design quizu
 - nahodne lozovani otazek
 - lepsi texty do quizu i sidebaru
@@ -12,3 +11,8 @@
 - vyhazování
 - konec hry
 - animace pohybu hrace
+
+
+---- NICE TO HAVE
+- zahazovat pouzite otazky
+- po vyhozeni nejakou hlasku

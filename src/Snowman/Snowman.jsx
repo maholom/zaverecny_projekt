@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Snowman = (props) => {
   return (
@@ -8,7 +8,7 @@ export const Snowman = (props) => {
       id="svg2648"
       version="1.1"
       viewBox="0 0 70 80"
-      className={`snowman-uvodni snowmanQuiz ${props.sign}`} 
+      className={props.className}
     >
       <defs id="defs2642">
         <linearGradient id="linearGradient1479">
@@ -40,7 +40,7 @@ export const Snowman = (props) => {
         <g
           id="g1460"
           transform="matrix(1.03842 0 0 1.0075 -455.159 187.98)"
-          style={{ mixBlendMode: "normal" }}
+          style={{ mixBlendMode: 'normal' }}
         >
           <g
             id="g1400"
@@ -339,7 +339,7 @@ export const Snowman = (props) => {
             ry="0.397"
           ></ellipse>
           <circle
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="circle1450"
             cx="467.923"
             cy="-167.547"
@@ -355,7 +355,7 @@ export const Snowman = (props) => {
             paintOrder="stroke markers fill"
           ></circle>
           <ellipse
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="ellipse1452"
             cx="471.824"
             cy="-167.452"
@@ -372,7 +372,7 @@ export const Snowman = (props) => {
             ry="0.423"
           ></ellipse>
           <ellipse
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="ellipse1454"
             cx="469.887"
             cy="-166.963"
@@ -389,7 +389,7 @@ export const Snowman = (props) => {
             ry="0.47"
           ></ellipse>
           <ellipse
-            style={{ mixBlendMode: "normal" }}
+            style={{ mixBlendMode: 'normal' }}
             id="ellipse1456"
             cx="473.667"
             cy="-168.732"

@@ -1,25 +1,36 @@
 export const initialState = {
-  started: false,
+  started: true,
   player: 1,
-  dice: null,
-  quiz: null,  // null - nebyl vyplnen, true - uspech, false - neuspech
-  fields: [0, 0, 0, 0, 0],
+  dice: 2,
+  quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
+  fields: [2, 0, 1, 0, 0],
 };
 
 export const isPlayerInGame = (state, player) =>
   state.fields.find((p) => p === player);
 
+export const isColisionAlert = (state) => {
+  const pos = getPosition(state, state.player);
+  const nextPos = pos + state.dice;
+  return state.fields[nextPos] > 0;
+};
+
+export const isFinishAlert = (state) => {
+  const pos = getPosition(state, state.player);
+  const nextPos = pos + state.dice;
+  return state.fields.length - 1 === nextPos;
+};
 export const getPosition = (state, player) =>
   state.fields.findIndex((p) => p === player);
 
 export const setStarted = (state, started) => ({
   ...initialState,
-  started: started
+  started: started,
 });
 
 export const setQuiz = (state, result) => ({
   ...state,
-  quiz: result
+  quiz: result,
 });
 
 export const doTurn = (state) => {

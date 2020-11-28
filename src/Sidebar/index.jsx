@@ -1,6 +1,7 @@
-import React from "react";
-import { setStarted, isPlayerInGame, doTurn } from "../state";
-import "./style.css";
+import React from 'react';
+import { setStarted, isPlayerInGame, doTurn } from '../state';
+import { Snowflake } from '../Snowflake/Snowflake.jsx';
+import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
   const inGame = isPlayerInGame(state, state.player);
@@ -8,20 +9,20 @@ export const Sidebar = ({ state, setState }) => {
   let action;
   if (state.dice === null) {
     // kostka je prázdná
-    label = inGame ? "Táhni" : "Budeš vyjíždět?";
-    action = "Hoď kostkou";
+    label = inGame ? 'Táhni' : 'Budeš vyjíždět?';
+    action = 'Hoď kostkou';
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
-    label = "Vyplň quiz"; // pomocny stav
-    action = "Máš okno";
+    label = 'Vyplň quiz'; // pomocny stav
+    action = 'Máš okno';
   } else if (inGame) {
-    action = "Táhni";
+    action = 'Táhni';
   } else if (state.dice === 3) {
-    label = "Nasazuješ";
-    action = "Zahájit sjezd";
+    label = 'Nasazuješ';
+    action = 'Zahájit sjezd';
   } else {
-    label = "Máš smúlu, hraje kamarád";
-    action = "Ok";
+    label = 'Máš smúlu, hraje kamarád';
+    action = 'Ok';
   }
 
   return (
@@ -34,13 +35,14 @@ export const Sidebar = ({ state, setState }) => {
         Nová hra
       </button>
       <div>
-        Domeček
+        Červený {isPlayerInGame(state, 1) ? 'NE' : 'ANO'}
         <br />
-        Červený {isPlayerInGame(state, 1) ? "NE" : "ANO"}
+        Zelený {isPlayerInGame(state, 2) ? 'NE' : 'ANO'}
         <br />
-        Zelený {isPlayerInGame(state, 2) ? "NE" : "ANO"}
-        <br />
-        {state.dice ? `Kostka ukazuje ${state.dice}` : ""}
+        <div>
+          <Snowflake /> Domeček
+        </div>
+        {state.dice ? `Kostka ukazuje ${state.dice}` : ''}
         <div className={`bubble player-${state.player}`}>
           {label}
           <button onClick={() => setState(doTurn(state, 1, 1))}>

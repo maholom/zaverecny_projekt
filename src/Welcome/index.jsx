@@ -26,12 +26,17 @@ export const Welcome = ({ startGame }) => {
           <br />A teď už jen: hurá do Alp!
         </p>
       </div>
-
+      <div className="tlacitko">
+        <button className="bublina speech" onClick={startGame}>
+          START
+        </button>
+      </div>
       <div className="container">
         <div className="left-side">
           <Snowman className="snowman-uvodni" />
         </div>
-        <div className="rigth-side">
+
+        <div className="right-side">
           <LyzarCerveny className="lyzar cerveny" />
           <LyzarZeleny className="lyzar zeleny" />
         </div>
@@ -39,5 +44,3 @@ export const Welcome = ({ startGame }) => {
     </>
   );
 };
-
-//<button className="bublina speech" onClick={startGame}>START</button>

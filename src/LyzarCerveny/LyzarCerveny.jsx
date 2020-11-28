@@ -7,7 +7,7 @@ export const LyzarCerveny = (props) => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="svg8"
       version="1.1"
-      viewBox="0 0 70 80"
+      viewBox="30 0 25 40"
       className={props.className}
     >
       <defs id="defs2">

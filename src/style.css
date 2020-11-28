@@ -22,3 +22,17 @@
 .player-2 {
   border-color: #439a86ff;
 }
+
+.game {
+  display: flex;
+  padding: 30px;
+}
+
+.plan {
+  flex-basis: 65%;
+}
+
+.sidebar {
+  flex-basis: 35%;
+  padding-left: 30px;
+}

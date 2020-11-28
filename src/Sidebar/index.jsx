@@ -26,8 +26,7 @@ export const Sidebar = ({ state, setState }) => {
   }
 
   return (
-    <>
-      Sidebar
+    <div className="sidebar">
       <button
         className="new-game"
         onClick={() => setState(setStarted(state, false))}
@@ -39,8 +38,9 @@ export const Sidebar = ({ state, setState }) => {
         <br />
         Zelený {isPlayerInGame(state, 2) ? 'NE' : 'ANO'}
         <br />
-        <div>
-          <Snowflake /> Domeček
+        <div className="homes">
+          <Snowflake />
+          <Snowflake />
         </div>
         {state.dice ? `Kostka ukazuje ${state.dice}` : ''}
         <div className={`bubble player-${state.player}`}>
@@ -50,6 +50,6 @@ export const Sidebar = ({ state, setState }) => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };

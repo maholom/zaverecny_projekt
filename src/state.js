@@ -1,34 +1,48 @@
+
+const fieldCount = 45;
+export const diceMax = 3;
+
 export const initialState = {
   started: true,
   player: 1,
   dice: null,
   quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
-  fields: [0, 0, 0, 0, 0],
+  player1: 0,
+  player2: 0,
 };
 
+const anotherPlayer = {
+  1: 2,
+  2: 1
+}
+
 export const isPlayerInGame = (state, player) =>
-  state.fields.find((p) => p === player);
+  state[`player${player}`] > 0;
 
 export const isColisionAlert = (state) => {
   const pos = getPosition(state, state.player);
   const nextPos = pos + state.dice;
-  return state.fields[nextPos] > 0;
+  return state[`player${anotherPlayer[state.player]}`] === nextPos;
 };
 
 export const isFinishAlert = (state) => {
   const pos = getPosition(state, state.player);
   const nextPos = pos + state.dice;
-  return state.fields.length - 1 === nextPos;
+  return nextPos === fieldCount;
 };
 
 export const isOverflowAlert = (state) => {
   const pos = getPosition(state, state.player);
   const nextPos = pos + state.dice;
-  return nextPos > state.fields.length - 1;
+  return nextPos > fieldCount;
+};
+
+export const isWinner = (state) => {
+  return state.player1 === fieldCount || state.player2 === fieldCount;
 };
 
 export const getPosition = (state, player) =>
-  state.fields.findIndex((p) => p === player);
+  state[`player${player}`]
 
 export const setStarted = (state, started) => ({
   ...initialState,
@@ -50,24 +64,24 @@ export const doTurn = (state) => {
 
   const inGame = isPlayerInGame(state, state.player);
   const currentPosition = getPosition(state, state.player);
-
+  const opponentPosition = getPosition(state, anotherPlayer[state.player]);
   let targetPosition = currentPosition;
 
-  if (inGame && (state.quiz === true || !isOverflowAlert(state))) {
+
+  if (inGame && state.quiz === true) {
     //táhnu
     targetPosition = currentPosition + state.dice;
-  } else if (!inGame && state.dice === 3) {
+  } else if (!inGame && state.dice === diceMax) {
     //nasazuju
-    targetPosition = 0;
+    targetPosition = 1;
   }
 
   return {
     ...state,
-    player: state.player === 1 ? 2 : 1,
+    player: anotherPlayer[state.player],
     dice: null,
     quiz: null,
-    fields: state.fields.map((x, i) =>
-      i === targetPosition ? state.player : state.player === x ? 0 : x,
-    ),
+    [`player${state.player}`]: targetPosition,
+    [`player${anotherPlayer[state.player]}`]: opponentPosition === targetPosition ? 0 : opponentPosition
   };
 };

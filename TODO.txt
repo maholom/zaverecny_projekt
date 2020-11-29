@@ -1,16 +1,11 @@
-- Welcome screen CSS
-- design sidebaru
-  - zobazit kostku videostop (const Dice 1-6 zobrazi)
-  - zobrazit domecek s lyzari
-
 - design quizu
--finishSideBar komponenta (bedny vítěze)
-
+- finishSideBar komponenta (bedny vítěze)
 
 - animace pohybu hrace
 - animace roztáčení kostky
 
-- finalni herni plan 
+- hlaska pri vyhazovani na startu
+- "Co máš v plánu, když jdeš do hor wandern?" - chybne odpovedi
 
 
 ---- NICE TO HAVE

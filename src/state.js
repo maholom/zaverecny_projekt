@@ -1,4 +1,3 @@
-
 const fieldCount = 45;
 export const diceMax = 3;
 
@@ -13,11 +12,10 @@ export const initialState = {
 
 const anotherPlayer = {
   1: 2,
-  2: 1
-}
+  2: 1,
+};
 
-export const isPlayerInGame = (state, player) =>
-  state[`player${player}`] > 0;
+export const isPlayerInGame = (state, player) => state[`player${player}`] > 0;
 
 export const isColisionAlert = (state) => {
   const pos = getPosition(state, state.player);
@@ -41,8 +39,7 @@ export const isWinner = (state) => {
   return state.player1 === fieldCount || state.player2 === fieldCount;
 };
 
-export const getPosition = (state, player) =>
-  state[`player${player}`]
+export const getPosition = (state, player) => state[`player${player}`];
 
 export const setStarted = (state, started) => ({
   ...initialState,
@@ -67,7 +64,6 @@ export const doTurn = (state) => {
   const opponentPosition = getPosition(state, anotherPlayer[state.player]);
   let targetPosition = currentPosition;
 
-
   if (inGame && state.quiz === true) {
     //táhnu
     targetPosition = currentPosition + state.dice;
@@ -82,6 +78,7 @@ export const doTurn = (state) => {
     dice: null,
     quiz: null,
     [`player${state.player}`]: targetPosition,
-    [`player${anotherPlayer[state.player]}`]: opponentPosition === targetPosition ? 0 : opponentPosition
+    [`player${anotherPlayer[state.player]}`]:
+      opponentPosition === targetPosition ? 0 : opponentPosition,
   };
 };

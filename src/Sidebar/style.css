@@ -1,11 +1,12 @@
 .new-game {
   background-color: #cc2c00;
-  padding: 10px;
+  padding: 20px;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600px;
+  font-size: 20px;
   border-radius: 20px;
+  margin-left: 100px;
 }
 
 .homes {
@@ -21,7 +22,10 @@
   display: flex;
   transform: translate(0, 50px);
 }
-
+.home-prazdny {
+  width: 150px;
+  height: 200px;
+}
 .lyzar-cerveny1,
 .lyzar-zeleny1 {
   width: 150px;
@@ -32,14 +36,13 @@
   width: 300px;
   text-align: center;
   line-height: 1.5em;
-  margin: 0;
   background-color: gray;
   border-radius: 30px;
   font-family: 'Roboto', sans-serif;
   padding: 20px;
   font-size: 18px;
   color: white;
-  margin: 30px 0;
+  margin: 0;
 }
 
 .player-1 {
@@ -48,4 +51,14 @@
 
 .player-2 {
   background-color: #16502d;
+}
+
+.dice {
+  width: 8pc;
+  height: 8pc;
+}
+.div-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

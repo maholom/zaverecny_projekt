@@ -7,7 +7,7 @@ export const Hazej = () => {
       style={{ lineHeight: '1.25' }}
       x="4.989"
       y="13.464"
-      fill="#000"
+      fill="#fff"
       fillOpacity="1"
       stroke="none"
       strokeWidth="0.138"

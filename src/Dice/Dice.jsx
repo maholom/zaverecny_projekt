@@ -36,7 +36,7 @@ export const Dice = (props) => {
               height="22.754"
               x="2.23"
               y="2.23"
-              fill="#cc2c00"
+              fill="#2c88a0"
               fillOpacity="1"
               strokeWidth="0.265"
               paintOrder="normal"

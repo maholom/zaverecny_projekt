@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 import {
   setStarted,
   isPlayerInGame,
   doTurn,
   isOverflowAlert,
   diceMax,
-} from "../state";
-import { Snowflake } from "../Snowflake/Snowflake.jsx";
-import { Lyzar } from "../Lyzar/Lyzar.jsx";
-import { Dice } from "../Dice/Dice.jsx";
-import "./style.css";
+} from '../state';
+import { Snowflake } from '../Snowflake/Snowflake.jsx';
+import { Lyzar } from '../Lyzar/Lyzar.jsx';
+import { Dice } from '../Dice/Dice.jsx';
+import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
   const inGame = isPlayerInGame(state, state.player);
@@ -18,23 +18,23 @@ export const Sidebar = ({ state, setState }) => {
   if (state.dice === null) {
     // kostka je prázdná
     label = inGame
-      ? "O kolik pojedeš dál?"
-      : "Jsi připraven vyjet na sjezdovku? Hoď kostkou!";
+      ? 'O kolik pojedeš dál?'
+      : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
   } else if (inGame && isOverflowAlert(state)) {
-    label = "Hodil jsi moc.";
-    action = "Hraje kámoš!";
+    label = 'Hodil jsi moc.';
+    action = 'Hraje kámoš!';
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
-    label = "Pusť se do kvízu!"; // pomocny stav
-    action = "Máš okno";
+    /*label = /*"Pusť se do kvízu! action = 'Máš okno';*/
+    // pomocny stav
   } else if (inGame) {
-    action = "Odstrč se a jeď!";
+    action = 'Odstrč se a jeď!';
   } else if (state.dice === diceMax) {
-    label = "Padla ti šestka. Připrav se na start!";
-    action = "Zahájit sjezd";
+    label = 'Padla ti šestka. Připrav se na start!';
+    action = 'Zahájit sjezd';
   } else {
-    label = "Potřebuješ šestku. Hraje kamarád";
-    action = "Ok";
+    label = 'Potřebuješ šestku. Hraje kamarád';
+    action = 'Ok';
   }
 
   return (
@@ -45,37 +45,35 @@ export const Sidebar = ({ state, setState }) => {
       >
         Nová hra
       </button>
-      <div>
-        <div className="home-lyzari">
-          {isPlayerInGame(state, 1) ? (
-            ""
-          ) : (
-            <Lyzar className="lyzar-cerveny1" fill="#cc2c00" />
-          )}
-          {isPlayerInGame(state, 2) ? (
-            ""
-          ) : (
-            <Lyzar className="lyzar-zeleny1" fill="#16502d" />
-          )}
-        </div>
-        <div className="homes">
-          <Snowflake className="snowflake" />
-          <Snowflake className="snowflake" />
-        </div>
-        <div>
-          <Dice
-            value={state.dice}
-            onClick={() => setState(doTurn(state, 1, 1))}
-          />
-        </div>
-        <div className={`infobublina player-${state.player}`}>
-          {label}
-          {action ? (
-            <button onClick={() => setState(doTurn(state, 1, 1))}>
-              {action}
-            </button>
-          ) : null}
-        </div>
+      <div className="home-lyzari">
+        {isPlayerInGame(state, 1) ? (
+          <div className="home-prazdny"></div>
+        ) : (
+          <Lyzar className="lyzar-cerveny1" fill="#cc2c00" />
+        )}
+        {isPlayerInGame(state, 2) ? (
+          <div className="home-prazdny"></div>
+        ) : (
+          <Lyzar className="lyzar-zeleny1" fill="#16502d" />
+        )}
+      </div>
+      <div className="homes">
+        <Snowflake className="snowflake" />
+        <Snowflake className="snowflake" />
+      </div>
+      <div className={`infobublina player-${state.player}`}>
+        {label}
+        {action ? (
+          <button onClick={() => setState(doTurn(state, 1, 1))}>
+            {action}
+          </button>
+        ) : null}
+      </div>
+      <div className="div-dice">
+        <Dice
+          value={state.dice}
+          onClick={() => setState(doTurn(state, 1, 1))}
+        />
       </div>
     </div>
   );

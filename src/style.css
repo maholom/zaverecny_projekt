@@ -19,7 +19,7 @@ h1 {
 
 .game {
   display: flex;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .plan {

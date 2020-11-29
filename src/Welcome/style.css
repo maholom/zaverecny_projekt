@@ -1,87 +1,116 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  flex: nowrap;
-  justify-content: space-between;
-  align-items: center;
+.obrazovka {
+  background-image: url(pozadi.png);
+  background-repeat: no-repeat;
 }
 
-.welcome {
+main {
   position: relative;
 }
 
-.left-side {
-  margin-left: 200px;
-  margin-bottom: 200px;
-}
-
-.right-side {
-  margin-right: 200px;
-  margin-bottom: 200px;
-}
-
-.tlacitko {
-  position: absolute;
-  left: 70%;
-  top: 65%;
-}
-
-.lyzar {
-  width: 300px;
-  height: 400px;
-  padding: 0;
+h2 {
+  font-family: 'Jura';
+  font-size: 16px;
+  padding-bottom: 5px;
   margin: 0;
 }
 
-p.bubble {
+p.pravidla {
+  position: absolute;
+  left: 350px;
+  top: 300px;
   position: relative;
-  max-width: 800px;
+  width: 300px;
   text-align: center;
   line-height: 1.4em;
-  margin: 40px auto;
-  background-color: #cc2c00;
-  border: 2px solid rgb(78, 77, 77);
+  margin: 0px;
+  background-color: #164450;
+  border: 2px solid darkgrey;
   border-radius: 30px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   padding: 20px;
-  font-size: large;
+  font-size: small;
   color: white;
 }
 
-p.bubble:before,
-p.bubble:after {
+p.pravidla:before,
+p.pravidla:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
 }
 
-p.ocas:before {
+p.speech:before {
   left: 30px;
   bottom: -50px;
   border: 25px solid;
-  border-color: #cc2c00 transparent transparent #cc2c00;
+  border-color: darkgrey transparent transparent darkgrey;
 }
 
-p.ocas:after {
+p.speech:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #cc2c00 transparent transparent #cc2c00;
+  border-color: #164450 transparent transparent #164450;
+}
+
+p.privitani {
+  position: absolute;
+  left: 60px;
+  top: 250px;
+  position: relative;
+  width: 300px;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 0px;
+  background-color: #d5f6ff;
+  border: 2px solid darkgrey;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  font-size: small;
+  color: black;
+}
+
+p.privitani:before,
+p.privitani:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+p.rec:before {
+  left: 30px;
+  bottom: -50px;
+  border: 25px solid;
+  border-color: darkgrey transparent transparent darkgrey;
+}
+
+p.rec:after {
+  left: 38px;
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #d5f6ff, transparent transparent #d5f6ff;
 }
 
 button.bublina {
+  position: absolute;
+  left: 650px;
+  bottom: 250px;
   position: relative;
-  width: 200px;
+  max-width: 100px;
   text-align: center;
   line-height: 1.4em;
   margin: 0;
-  background-color: #16502d;
-  border: 2px solid #16502d;
+  background-color: #a32300;
+  border: 2px solid darkgrey;
   border-radius: 30px;
   font-family: sans-serif;
   padding: 20px;
+  margin: 0px;
   font-size: large;
+  color: white;
 }
 
 button.bublina:before,
@@ -92,22 +121,30 @@ p.bublina:after {
   height: 0;
 }
 
-button.speech:before {
+button.start:before {
   left: 30px;
   bottom: -50px;
   border: 25px solid;
-  border-color: #16502d transparent transparent #16502d;
+  border-color: #a32300 transparent transparent #a32300;
 }
 
-button.speech:after {
+button.start:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #16502d transparent transparent #16502d;
+  border-color: darkgrey transparent transparent darkgrey;
 }
 
 .snowman-uvodni {
-  width: 300px;
-  height: 400px;
-  margin: 100px auto;
+  max-width: 200px;
+  max-height: 300px;
+  margin-left: 50px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: hsla(208, 27%, 27%, 1);
 }

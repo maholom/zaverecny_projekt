@@ -1,6 +1,6 @@
 import React from 'react';
-import { Figure } from './Figure';
-import { isPlayerInGame } from './state';
+import { Figure } from '../Figure/Figure.jsx';
+import { isPlayerInGame } from '../state';
 
 export const Plan = (props) => {
   const fields = props.state.fields;
@@ -53,4 +53,3 @@ export const Plan = (props) => {
     </svg>
   );
 };
-

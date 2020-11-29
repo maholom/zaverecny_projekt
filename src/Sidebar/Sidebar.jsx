@@ -1,8 +1,7 @@
 import React from 'react';
 import { setStarted, isPlayerInGame, doTurn, isOverflowAlert } from '../state';
 import { Snowflake } from '../Snowflake/Snowflake.jsx';
-import { LyzarCerveny } from '../LyzarCerveny/LyzarCerveny.jsx';
-import { LyzarZeleny } from '../LyzarZeleny/LyzarZeleny.jsx';
+import { Lyzar } from '../Lyzar/Lyzar.jsx';
 import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
@@ -45,17 +44,17 @@ export const Sidebar = ({ state, setState }) => {
           {isPlayerInGame(state, 1) ? (
             ''
           ) : (
-            <LyzarCerveny className="lyzar-cerveny1" />
+            <Lyzar className="lyzar-cerveny1" fill="#cc2c00" />
           )}
           {isPlayerInGame(state, 2) ? (
             ''
           ) : (
-            <LyzarZeleny className="lyzar-zeleny1" />
+            <Lyzar className="lyzar-zeleny1" fill="#16502d" />
           )}
         </div>
         <div className="homes">
-          <Snowflake />
-          <Snowflake />
+          <Snowflake className="snowflake" />
+          <Snowflake className="snowflake" />
         </div>
         {state.dice ? `Kostka ukazuje ${state.dice}` : ''}
         <div className={`bubble player-${state.player}`}>

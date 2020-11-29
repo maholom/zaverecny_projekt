@@ -7,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="5.6692915pc"
+   height="5.6692915pc"
+   viewBox="0 0 24 24"
    version="1.1"
-   id="svg8"
+   id="svg2995"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="dice_side1.svg">
   <defs
-     id="defs2" />
+     id="defs2989" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -23,20 +23,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="149.06164"
-     inkscape:cy="205.52144"
-     inkscape:document-units="mm"
+     inkscape:zoom="1.4"
+     inkscape:cx="279.2953"
+     inkscape:cy="82.903679"
+     inkscape:document-units="pc"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
+     width="25mm"
+     units="pc"
      inkscape:window-width="1366"
      inkscape:window-height="728"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0" />
   <metadata
-     id="metadata5">
+     id="metadata2992">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -52,7 +54,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g883">
+       id="g883"
+       transform="translate(-1.5119024,-1.5119048)">
       <g
          id="g876">
         <rect

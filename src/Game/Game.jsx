@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Plan } from '../Plan.jsx';
+import { Plan } from '../Plan/Plan.jsx';
 import { Quiz } from '../Quiz/Quiz.jsx';
-import { Sidebar } from '../Sidebar/index.jsx';
+import { Sidebar } from '../Sidebar/Sidebar.jsx';
 import { isOverflowAlert, isPlayerInGame, setStarted } from '../state';
 
 export const Game = ({ state, setState }) => {

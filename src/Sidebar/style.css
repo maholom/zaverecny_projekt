@@ -13,7 +13,8 @@
 }
 
 .snowflake {
-  flex: 1 1 50%;
+  width: 200px;
+  margin: 20px;
 }
 
 .home-lyzari {
@@ -21,5 +22,5 @@
 }
 .lyzar-cerveny1,
 .lyzar-zeleny1 {
-  flex: 1 1 50%;
+  width: 200px;
 }

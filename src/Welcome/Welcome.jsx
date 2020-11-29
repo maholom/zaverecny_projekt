@@ -25,7 +25,11 @@ export const Welcome = ({ startGame }) => {
           <br />A teď už jen: hurá do Alp!
         </p>
       </div>
-
+      <div className="tlacitko">
+        <button className="bublina speech" onClick={startGame}>
+          START
+        </button>
+      </div>
       <div className="container">
         <div className="left-side">
           <Snowman className="snowman-uvodni" />

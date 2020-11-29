@@ -1,7 +1,7 @@
 import React from 'react';
 import { Snowman } from '../Snowman/Snowman';
 import './style.css';
-import { pozadi } from './pozadi.png';
+import { Logo } from './Logo';
 
 export const Welcome = ({ startGame }) => {
   return (
@@ -29,6 +29,11 @@ export const Welcome = ({ startGame }) => {
           </p>
           <Snowman className="snowman-uvodni" />
         </div>
+        <footer>
+          <div className="paticka">
+            <Logo className="logo" />
+          </div>
+        </footer>
       </div>
     </>
   );

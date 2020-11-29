@@ -1,5 +1,5 @@
 export const initialState = {
-  started: false,
+  started: true,
   player: 1,
   dice: null,
   quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech

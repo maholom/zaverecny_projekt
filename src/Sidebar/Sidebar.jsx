@@ -14,7 +14,6 @@ export const Sidebar = ({ state, setState }) => {
     label = inGame
       ? 'Připrav se na kvíz'
       : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
-    action = 'Hoď kostkou';
   } else if (inGame && isOverflowAlert(state)) {
     label = 'Hodil jsi moc.';
     action = 'Hraje kámoš!';
@@ -58,14 +57,18 @@ export const Sidebar = ({ state, setState }) => {
           <Snowflake className="snowflake" />
         </div>
         <div>
-          <Dice />
+          <Dice
+            value={state.dice}
+            onClick={() => setState(doTurn(state, 1, 1))}
+          />
         </div>
-        {state.dice ? `Kostka ukazuje ${state.dice}` : ''}
         <div className={`infobublina player-${state.player}`}>
           {label}
-          <button onClick={() => setState(doTurn(state, 1, 1))}>
-            {action}
-          </button>
+          {action ? (
+            <button onClick={() => setState(doTurn(state, 1, 1))}>
+              {action}
+            </button>
+          ) : null}
         </div>
       </div>
     </div>

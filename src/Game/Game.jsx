@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plan } from '../Plan/Plan.jsx';
+import { Plan } from '../Plan/Plan1.jsx';
 import { Quiz } from '../Quiz/Quiz.jsx';
 import { Sidebar } from '../Sidebar/Sidebar.jsx';
 import { isOverflowAlert, isPlayerInGame, setStarted } from '../state';

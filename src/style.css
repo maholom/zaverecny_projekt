@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Roboto:wght@300;400;900&display=swap');
 
+h1 {
+  margin-top: 0;
+}
+
 .plan {
   background-image: url(./Podklady_svg/pozadi.svg);
   background-size: 100%;
@@ -11,18 +15,6 @@
 
 .button {
   margin: 1em;
-}
-
-.bubble {
-  border: 2px solid gray;
-}
-
-.player-1 {
-  border-color: red;
-}
-
-.player-2 {
-  border-color: #439a86ff;
 }
 
 .game {

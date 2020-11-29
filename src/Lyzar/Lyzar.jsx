@@ -6,8 +6,6 @@ export const Lyzar = (props) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="svg8"
-      width="98.268"
-      height="118.656"
       version="1.1"
       viewBox="0 0 26 31.394"
       className={props.className}

@@ -13,14 +13,39 @@
 }
 
 .snowflake {
-  width: 200px;
-  margin: 20px;
+  width: 150px;
+  margin: 0 20px;
 }
 
 .home-lyzari {
   display: flex;
+  transform: translate(0, 50px);
 }
+
 .lyzar-cerveny1,
 .lyzar-zeleny1 {
-  width: 200px;
+  width: 150px;
+  margin: 0 20px;
+}
+
+.infobublina {
+  width: 300px;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: gray;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+  margin: 30px 0;
+}
+
+.player-1 {
+  background-color: #cc2c00;
+}
+
+.player-2 {
+  background-color: #16502d;
 }

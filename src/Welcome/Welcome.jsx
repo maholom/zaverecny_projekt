@@ -34,9 +34,6 @@ export const Welcome = ({ startGame }) => {
         <div className="left-side">
           <Snowman className="snowman-uvodni" />
         </div>
-        <button className="bublina speech" onClick={startGame}>
-          START
-        </button>
         <div className="rigth-side">
           <Lyzar className="lyzar cerveny" fill="#cc2c00" />
           <Lyzar className="lyzar zeleny" fill="#16502d" />

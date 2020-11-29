@@ -2,6 +2,7 @@ import React from 'react';
 import { setStarted, isPlayerInGame, doTurn, isOverflowAlert } from '../state';
 import { Snowflake } from '../Snowflake/Snowflake.jsx';
 import { Lyzar } from '../Lyzar/Lyzar.jsx';
+import { Dice } from '../Dice/Dice.jsx';
 import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
@@ -56,8 +57,11 @@ export const Sidebar = ({ state, setState }) => {
           <Snowflake className="snowflake" />
           <Snowflake className="snowflake" />
         </div>
+        <div>
+          <Dice />
+        </div>
         {state.dice ? `Kostka ukazuje ${state.dice}` : ''}
-        <div className={`bubble player-${state.player}`}>
+        <div className={`infobublina player-${state.player}`}>
           {label}
           <button onClick={() => setState(doTurn(state, 1, 1))}>
             {action}

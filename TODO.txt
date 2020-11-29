@@ -10,7 +10,7 @@
 - animace pohybu hrace
 - animace roztáčení kostky
 
-- uklidit komponenty! Soňa
+- finalni herni plan 
 
 
 ---- NICE TO HAVE

@@ -1,11 +1,12 @@
 .app {
-  background-image: linear-gradient(#D5F6FF, #FFFFFF);
+  background-image: linear-gradient(#d5f6ff, #ffffff);
 }
 
 h1 {
   font-family: 'Jura';
   font-size: 60px;
-  color: #CC2C00;
+  color: #cc2c00;
   text-align: center;
-padding-top: 30px;
+  padding-top: 30px;
+  margin: 0px;
 }

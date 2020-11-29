@@ -1,6 +1,7 @@
 .obrazovka {
-  background-image: url(pozadi.png);
+  background-image: url(../Podklady_svg/pozadi.svg);
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 main {
@@ -14,7 +15,7 @@ h2 {
   margin: 0;
 }
 
-p.pravidla {
+div.pravidla {
   position: absolute;
   left: 350px;
   top: 300px;
@@ -32,31 +33,31 @@ p.pravidla {
   color: white;
 }
 
-p.pravidla:before,
-p.pravidla:after {
+div.pravidla:before,
+div.pravidla:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
 }
 
-p.speech:before {
+div.speech:before {
   left: 30px;
   bottom: -50px;
   border: 25px solid;
   border-color: darkgrey transparent transparent darkgrey;
 }
 
-p.speech:after {
+div.speech:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
   border-color: #164450 transparent transparent #164450;
 }
 
-p.privitani {
+div.privitani {
   position: absolute;
-  left: 60px;
+  left: 150px;
   top: 250px;
   position: relative;
   width: 300px;
@@ -72,49 +73,49 @@ p.privitani {
   color: black;
 }
 
-p.privitani:before,
-p.privitani:after {
+div.privitani:before,
+div.privitani:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
 }
 
-p.rec:before {
+div.rec:before {
   left: 30px;
   bottom: -50px;
   border: 25px solid;
   border-color: darkgrey transparent transparent darkgrey;
 }
 
-p.rec:after {
+div.rec:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #d5f6ff, transparent transparent #d5f6ff;
+  border-color: #d5f6ff transparent transparent #d5f6ff;
 }
 
 button.bublina {
   position: absolute;
-  left: 650px;
+  left: 450px;
   bottom: 250px;
   position: relative;
-  max-width: 100px;
+  width: 200px;
+  height: 100px;
   text-align: center;
   line-height: 1.4em;
   margin: 0;
   background-color: #a32300;
   border: 2px solid darkgrey;
   border-radius: 30px;
-  font-family: sans-serif;
+  font-family: 'Jura', sans-serif;
   padding: 20px;
-  margin: 0px;
-  font-size: large;
+  font-size: 30px;
   color: white;
 }
 
 button.bublina:before,
-p.bublina:after {
+button.bublina:after {
   content: ' ';
   position: absolute;
   width: 0;
@@ -124,15 +125,15 @@ p.bublina:after {
 button.start:before {
   left: 30px;
   bottom: -50px;
-  border: 25px solid;
-  border-color: #a32300 transparent transparent #a32300;
+  border: 2px solid;
+  border-color: darkgrey transparent transparent darkgrey;
 }
 
 button.start:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: darkgrey transparent transparent darkgrey;
+  border-color: #a32300 transparent transparent #a32300;
 }
 
 .snowman-uvodni {
@@ -146,5 +147,29 @@ button.start:after {
   height: 50px;
   border-radius: 50%;
   border: 2px solid white;
-  background-color: hsla(208, 27%, 27%, 1);
+  background-color: #164450;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.paticka {
+  font-size: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.attribution {
+  margin-top: 0px;
+  padding-top: 0px;
 }

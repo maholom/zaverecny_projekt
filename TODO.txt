@@ -3,9 +3,9 @@
 
 - animace pohybu hrace
 - animace roztáčení kostky
+- responzivita pozadi uvod/hra
 
 - hlaska pri vyhazovani na startu
-- "Co máš v plánu, když jdeš do hor wandern?" - chybne odpovedi
 
 
 ---- NICE TO HAVE

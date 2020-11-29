@@ -138,7 +138,7 @@ export const questions = [
       },
       {
         text: 'Jdu slavit narozeniny.',
-        value: true,
+        value: false,
       },
     ],
   },

@@ -30,9 +30,9 @@ export const Welcome = ({ startGame }) => {
           <Snowman className="snowman-uvodni" />
         </div>
         <footer>
-          <div className="paticka">
-            <Logo className="logo" />
-          </div>
+          <p className="paticka">Hra vytvořena během Digitální akademie 2020</p>
+          <Logo className="logo" />
+          <p className="attribution">Herní prvky </p>
         </footer>
       </div>
     </>

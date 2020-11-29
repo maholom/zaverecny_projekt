@@ -1,6 +1,8 @@
 import React from 'react';
+import { Figure } from '../Figure/Figure';
 
-export const Plan = () => {
+export const Plan = (props) => {
+  const fields = props.state.fields;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -904,51 +906,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1081"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -198.609 30.056)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1639"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1641"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1643"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1645"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1426"
           fill="none"
@@ -967,51 +925,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -180.108 36.015)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-5"
           fill="#2c88a0"
@@ -1020,51 +934,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-4"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -183.283 45.54)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-4"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-9"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-0"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-7"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-0"
           fill="#2c88a0"
@@ -1073,51 +943,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-9"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -196.47 56.022)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-7"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-3"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-3"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-6"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3"
           fill="#2c88a0"
@@ -1126,51 +952,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -192.803 67.102)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5"
           fill="#2c88a0"
@@ -1179,51 +961,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -173.677 67.631)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-5"
           fill="#2c88a0"
@@ -1232,51 +970,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-5"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -157.811 59.775)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-7"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-6"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-9"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-0"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-1"
           fill="#2c88a0"
@@ -1285,51 +979,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-6"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -144.648 48.884)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-1"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-3"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-0"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-1"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-0"
           fill="#2c88a0"
@@ -1338,51 +988,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-2"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -134.972 38.376)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-4"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-1"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-4"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-18"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-3"
           fill="#2c88a0"
@@ -1391,51 +997,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-1"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -118.795 29.834)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-45"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-5"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-1"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-5"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-4"
           fill="#2c88a0"
@@ -1444,51 +1006,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-7"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -101.106 32.328)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-5"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-57"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-46"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-8"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-18"
           fill="#2c88a0"
@@ -1497,51 +1015,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-3"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -100.954 46.011)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-6"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-60"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-7"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-80"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-49"
           fill="#2c88a0"
@@ -1550,51 +1024,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-4"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -100.596 60.777)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-35"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-2"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-6"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-3"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-58"
           fill="#2c88a0"
@@ -1603,51 +1033,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-67"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -111.916 72.999)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-58"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-4"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-42"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-7"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-2"
           fill="#2c88a0"
@@ -1656,51 +1042,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-8"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -127.488 81.616)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-75"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-65"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-12"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-87"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-42"
           fill="#2c88a0"
@@ -1709,51 +1051,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-0"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -144.044 90.99)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-12"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-28"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-3"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-4"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-08"
           fill="#2c88a0"
@@ -1762,51 +1060,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-52"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -159.163 99.608)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-64"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-24"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-5"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-10"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-77"
           fill="#2c88a0"
@@ -1815,51 +1069,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-45"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -169.822 112.081)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-76"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-22"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-2"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-23"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-6"
           fill="#2c88a0"
@@ -1868,51 +1078,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-83"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -163.925 120.85)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-18"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-58"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-8"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-22"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-9"
           fill="#2c88a0"
@@ -1921,51 +1087,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-11"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -145.145 121.5)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-68"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-8"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-66"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-00"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-93"
           fill="#2c88a0"
@@ -1974,51 +1096,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-03"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -125.976 114.878)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-51"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-70"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-94"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-73"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-66"
           fill="#2c88a0"
@@ -2027,51 +1105,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-13"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -94.831 98.625)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-181"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-11"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-14"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-86"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-31"
           fill="#2c88a0"
@@ -2080,51 +1114,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-61"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -109.572 107.016)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-39"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-51"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-87"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-71"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-41"
           fill="#2c88a0"
@@ -2133,51 +1123,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-38"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -80.884 90.565)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-30"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-0"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-98"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-6"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-35"
           fill="#2c88a0"
@@ -2186,51 +1132,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-31"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -66.468 81.993)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-53"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-30"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-44"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-15"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-354"
           fill="#2c88a0"
@@ -2239,51 +1141,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-80"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -51.349 75.249)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-2"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-603"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-423"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-63"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-586"
           fill="#2c88a0"
@@ -2292,51 +1150,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-452"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -31.596 74.237)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-28"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-41"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-22"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-37"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-63"
           fill="#2c88a0"
@@ -2345,51 +1159,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-92"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -24.272 82.438)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-55"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-73"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-31"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-79"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-68"
           fill="#2c88a0"
@@ -2398,51 +1168,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-62"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -25.286 97.827)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-77"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-227"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-79"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-13"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-212"
           fill="#2c88a0"
@@ -2451,51 +1177,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-01"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -31.347 107.373)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-79"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-20"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-64"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-54"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-46"
           fill="#2c88a0"
@@ -2504,51 +1186,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-110"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -46.073 114.187)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-759"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-31"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-93"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-9"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38"
           fill="#2c88a0"
@@ -2557,51 +1195,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -60.164 123.234)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-6"
           fill="#2c88a0"
@@ -2610,51 +1204,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-2"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -77.747 129.922)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-2"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-5"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-1"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-5"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-7"
           fill="#2c88a0"
@@ -2663,51 +1213,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-8"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -96.04 135.44)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-23"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-8"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-0"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-1"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-0"
           fill="#2c88a0"
@@ -2716,51 +1222,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-23"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -113.579 142.47)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-1"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-2"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-5"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-6"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-2"
           fill="#2c88a0"
@@ -2769,51 +1231,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-5"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -132.856 147.611)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-3"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-9"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-3"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-0"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-03"
           fill="#2c88a0"
@@ -2822,51 +1240,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-9"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -149.033 153.356)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-6"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-0"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-04"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-64"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-1"
           fill="#2c88a0"
@@ -2875,51 +1249,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-1"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -146.16 165.754)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-0"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-86"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-31"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-14"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-3"
           fill="#2c88a0"
@@ -2928,51 +1258,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-57"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -129.832 171.348)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-11"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-4"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-8"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-4"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-35"
           fill="#2c88a0"
@@ -2981,51 +1267,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-4"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -111.235 171.424)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-10"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-6"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-9"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-52"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-23"
           fill="#2c88a0"
@@ -3034,51 +1276,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-0"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -90.447 172.104)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-01"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-3"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-52"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-2"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-05"
           fill="#2c88a0"
@@ -3087,51 +1285,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-3"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -70.49 171.197)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-5"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-82"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-044"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-42"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-19"
           fill="#2c88a0"
@@ -3140,51 +1294,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-31"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -50.532 166.585)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-7"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-08"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-527"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-19"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-9"
           fill="#2c88a0"
@@ -3193,51 +1303,7 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-94"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -32.314 158.346)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-00"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-7"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-88"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-13"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+
         <path
           id="path1434-3-5-38-16"
           fill="#2c88a0"
@@ -3246,55 +1312,11 @@ export const Plan = () => {
           style={{ mixBlendMode: 'normal' }}
           strokeWidth="0.085"
         ></path>
-        <g
-          id="g1444-0-8-60-95"
-          opacity="0.997"
-          transform="matrix(.92414 0 0 .94581 -16.817 148.14)"
-        >
-          <ellipse
-            style={{ mixBlendMode: 'normal' }}
-            id="ellipse1436-3-8-0-54"
-            cx="40.329"
-            cy="13.054"
-            fill="#030104"
-            strokeWidth="0.723"
-            rx="1.491"
-            ry="1.873"
-            transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
-          ></ellipse>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1438-1-2-282-74"
-            fill="#cc2c00"
-            fillOpacity="1"
-            stroke="none"
-            strokeOpacity="1"
-            strokeWidth="0.723"
-            d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1440-1-3-07-34"
-            fill="#030104"
-            strokeWidth="0.723"
-            d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
-          ></path>
-          <path
-            style={{ mixBlendMode: 'normal' }}
-            id="path1442-0-4-94-7"
-            fill="none"
-            stroke="#030104"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
-            strokeWidth="1.445"
-            d="M29.736 18.106l14.057 7.43s1.78.701 2.42-.895"
-          ></path>
-        </g>
+        <Figure
+          player={fields[0]}
+          position=".3245 -.02986 .03763 .34823 -57.944 -212.34"
+        />
       </g>
-      <style id="style12"></style>
-      <style id="style12-0"></style>
-      <style id="style12-7"></style>
     </svg>
   );
 };

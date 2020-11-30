@@ -47,14 +47,14 @@ export const Sidebar = ({ state, setState }) => {
       </button>
       <div className="home-lyzari">
         {isPlayerInGame(state, 1) ? (
-          <div className="home-prazdny"></div>
+          <div className="home-placeholder"></div>
         ) : (
-          <Lyzar className="lyzar-cerveny1" fill="#cc2c00" />
+          <Lyzar className="lyzar" fill="#cc2c00" />
         )}
         {isPlayerInGame(state, 2) ? (
-          <div className="home-prazdny"></div>
+          <div className="home-placeholder"></div>
         ) : (
-          <Lyzar className="lyzar-zeleny1" fill="#16502d" />
+          <Lyzar className="lyzar" fill="#16502d" />
         )}
       </div>
       <div className="homes">
@@ -64,7 +64,10 @@ export const Sidebar = ({ state, setState }) => {
       <div className={`infobublina player-${state.player}`}>
         {label}
         {action ? (
-          <button onClick={() => setState(doTurn(state, 1, 1))}>
+          <button
+            className="infobtn"
+            onClick={() => setState(doTurn(state, 1, 1))}
+          >
             {action}
           </button>
         ) : null}

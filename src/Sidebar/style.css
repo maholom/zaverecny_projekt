@@ -1,16 +1,40 @@
 .new-game {
-  background-color: #cc2c00;
+  background-color: #a32300;
   padding: 20px;
+  font-family: 'Jura', sans-serif;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
-  border-radius: 20px;
-  margin-left: 100px;
+  font-size: 30px;
+  border: 2px solid darkgrey;
+  border-radius: 30px;
+  transform: translate(100px, -10px);
+  position: relative;
+  cursor: pointer;
+}
+
+.new-game:before,
+.new-game:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.new-game:after {
+  left: 38px;
+  bottom: -30px;
+  border: 15px solid;
+  border-color: #a32300 transparent transparent #a32300;
+}
+
+.new-game:hover {
+  color: black;
 }
 
 .homes {
   display: flex;
+  margin: 0 30px 40px 30px;
 }
 
 .snowflake {
@@ -22,29 +46,38 @@
   display: flex;
   transform: translate(0, 50px);
 }
-.home-prazdny {
+.home-placeholder {
   width: 150px;
   height: 200px;
+  margin: 0 20px;
 }
-.lyzar-cerveny1,
-.lyzar-zeleny1 {
+.lyzar {
   width: 150px;
+  height: 200px;
   margin: 0 20px;
 }
 
 .infobublina {
   width: 300px;
+  height: 80px;
   text-align: center;
   line-height: 1.5em;
-  background-color: gray;
-  border-radius: 30px;
+  border-radius: 10px;
   font-family: 'Roboto', sans-serif;
   padding: 20px;
   font-size: 18px;
   color: white;
-  margin: 0;
 }
 
+.infobtn {
+  padding: 7px 20px;
+  margin: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
 .player-1 {
   background-color: #cc2c00;
 }
@@ -61,4 +94,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 0;
 }

@@ -1,12 +1,12 @@
 .obrazovka {
   background-image: url(../Podklady_svg/pozadi.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-main {
   position: relative;
 }
+/*
+main {
+  position: relative;
+}*/
 
 h2 {
   font-family: 'Jura';
@@ -103,7 +103,6 @@ button.bublina {
   width: 200px;
   height: 100px;
   text-align: center;
-  line-height: 1.4em;
   margin: 0;
   background-color: #a32300;
   border: 2px solid darkgrey;

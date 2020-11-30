@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Plan } from '../Plan/Plan1.jsx';
 import { Quiz } from '../Quiz/Quiz.jsx';
 import { Sidebar } from '../Sidebar/Sidebar.jsx';
+import { SidebarFinish } from '../SidebarFinish/SidebarFinish';
+
 import {
   isOverflowAlert,
   isPlayerInGame,
@@ -17,12 +19,7 @@ export const Game = ({ state, setState }) => {
       <div className="game">
         <Plan state={state} className="plan" />
         {isWinner(state) ? (
-          <div>
-            Vyhrál jsi, kámo!
-            <button onClick={() => setState(setStarted(state, false))}>
-              Zpět na začátek
-            </button>
-          </div>
+          <SidebarFinish />
         ) : (
           <Sidebar state={state} setState={setState} />
         )}

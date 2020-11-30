@@ -1,5 +1,5 @@
 - design quizu
-- finishSideBar komponenta (bedny vítěze)
+
 
 - animace pohybu hrace
 - animace roztáčení kostky

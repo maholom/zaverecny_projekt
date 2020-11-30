@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-import { Plan } from "../Plan/Plan1.jsx";
-import { Quiz } from "../Quiz/Quiz.jsx";
-import { Sidebar } from "../Sidebar/Sidebar.jsx";
+import React, { useState } from 'react';
+import { Plan } from '../Plan/Plan1.jsx';
+import { Quiz } from '../Quiz/Quiz.jsx';
+import { Sidebar } from '../Sidebar/Sidebar.jsx';
+import { SidebarFinish } from '../SidebarFinish/SidebarFinish';
+
 import {
   isOverflowAlert,
   isPlayerInGame,
   setStarted,
   isWinner,
-} from "../state";
+} from '../state';
 
 export const Game = ({ state, setState }) => {
   const inGame = isPlayerInGame(state, state.player);
@@ -17,12 +19,7 @@ export const Game = ({ state, setState }) => {
       <div className="game">
         <Plan state={state} />
         {isWinner(state) ? (
-          <div>
-            Vyhrál jsi, kámo!
-            <button onClick={() => setState(setStarted(state, false))}>
-              Zpět na začátek
-            </button>
-          </div>
+          <SidebarFinish />
         ) : (
           <Sidebar state={state} setState={setState} />
         )}

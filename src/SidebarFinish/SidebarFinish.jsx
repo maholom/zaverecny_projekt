@@ -3,7 +3,7 @@ import { setStarted } from '../state';
 import './style.css';
 import foto_lyzar_cil from './foto_lyzar_cil.jpg';
 
-export const SidebarFinish = () => {
+export const SidebarFinish = ({ state, setState }) => {
   return (
     <>
       <div className="padatka" aria-hidden="true">
@@ -23,7 +23,7 @@ export const SidebarFinish = () => {
         <div className="padatko">❄</div>
       </div>
       <div>
-        <header className="shimmer">Gratulace! Gratulation!</header>
+        <div className="shimmer">Gratulace! Gratulation!</div>
         <main>
           <div className="center">
             <figure>

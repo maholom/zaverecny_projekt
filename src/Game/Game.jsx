@@ -19,7 +19,7 @@ export const Game = ({ state, setState }) => {
       <div className="game">
         <Plan state={state} className="plan" />
         {isWinner(state) ? (
-          <SidebarFinish />
+          <SidebarFinish state={state} setState={setState} />
         ) : (
           <Sidebar state={state} setState={setState} />
         )}

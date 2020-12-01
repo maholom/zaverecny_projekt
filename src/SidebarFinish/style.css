@@ -1,16 +1,20 @@
+<<<<<<< HEAD
 .sidebar-finish {
   width: 80%;
   height: 80%;
 }
 
 .nadpis-finish {
+=======
+/*header {
+>>>>>>> dc156c60b0feb243e428d408181f590f54d40fce
   font-family: 'Jura', sans-serif;
   font-size: 30px;
   font-weight: bold;
   padding: 0px;
   color: #f5d000;
   text-align: center;
-}
+}*/
 
 .gratulace {
   font-family: 'Roboto' sans-serif;
@@ -166,8 +170,13 @@ button.bublina-final {
   height: 100px;
   text-align: center;
   line-height: 1.4em;
+<<<<<<< HEAD
   margin-top: 20px;
   background-color: #a32300;
+=======
+  margin-top: 40px;
+  background-color: #cc2c00;
+>>>>>>> dc156c60b0feb243e428d408181f590f54d40fce
   border: 2px solid darkgrey;
   border-radius: 30px;
   font-family: 'Jura', sans-serif;
@@ -194,7 +203,7 @@ button.start:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #a32300 transparent transparent #a32300;
+  border-color: #cc2c00 transparent transparent #cc2c00;
 }
 
 .center {

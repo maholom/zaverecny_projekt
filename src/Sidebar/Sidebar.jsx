@@ -67,17 +67,18 @@ export const Sidebar = ({ state, setState }) => {
       </div>
       <div className={`infobublina player-${state.player}`}>
         {label}
-        {action ? (
+        {/*{action ? (
           <button
             className="infobtn"
             onClick={() => setState(doTurn(state, 1, 1))}
           >
             {action}
           </button>
-        ) : null}
+        ) : null}*/}
       </div>
       <div className="div-dice">
         <Dice
+          fill={['#cc2c00', '#cc2c00', '#16502d'][state.player || 0]}
           value={state.dice}
           onClick={() => setState(doTurn(state, 1, 1))}
         />

@@ -1,5 +1,3 @@
-- design quizu
-
 
 - animace pohybu hrace
 - animace roztáčení kostky
@@ -11,5 +9,4 @@
 ---- NICE TO HAVE
 - zahazovat pouzite otazky
 - po vyhozeni nejakou hlasku
-- snezeni
 - audio doprovod

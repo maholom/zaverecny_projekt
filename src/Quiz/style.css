@@ -1,5 +1,5 @@
 .shade {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
   right: 0;
@@ -9,28 +9,127 @@
 
 .popup {
   position: fixed;
-  width: 300px;
-  /* height: 300px; */
+  width: 500px;
   background: white;
-  left: calc(50% - 150px);
-  top: calc(40% - 150px);
+  left: calc(50% - 250px);
+  top: calc(40% - 200px);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  border-radius: 30px;
+  border: 8px solid #16502d;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-animation: pop-up 0.65s linear;
+  animation: pop-up 0.65s linear;
+}
+@-webkit-keyframes pop-up {
+  0% {
+    -webkit-transform: scale(0.2) rotateZ(0);
+    transform: scale(0.2) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes pop-up {
+  0% {
+    -webkit-transform: scale(0.2) rotateZ(0);
+    transform: scale(0.2) rotateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
 }
 
+.quiz-h2 {
+  font-family: 'Jura';
+  font-size: 35px;
+  color: #cc2c00;
+  padding-bottom: 20px;
+}
+
+.quiz-comment {
+  padding-bottom: 10px;
+}
+.alert {
+  color: #cc2c00;
+  font-weight: 500;
+  font-size: 20px;
+}
+.quiz-question {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
 .snowmanQuiz {
-  width: 30px;
-  border-radius: 30px;
+  width: 50px;
+  border-radius: 20px;
 }
 
 .wrong {
-  background: red;
+  background: #cc2c00;
 }
 
 .right {
-  background: green;
+  background: #16502d;
 }
 .answer {
   border: 1px solid gray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 150px 2px 50px;
+  margin: 10px;
+  cursor: pointer;
 }
 .selected {
-  border-color: blue;
+  background-color: #d5f6ff;
+}
+.quiz-evaluated {
+  padding: 20px;
+}
+.quiz-btn {
+  background-color: #a32300;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  border: 1px solid darkgrey;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-animation: change 1.2s infinite;
+  animation: change 1.2s infinite;
+}
+@-webkit-keyframes change {
+  0% {
+    -webkit-background-color: #a32300;
+    background-color: #a32300;
+  }
+  50% {
+    -webkit-background-color: #f53500;
+    background-color: #f53500;
+  }
+  100% {
+    -webkit-background-color: #a32300;
+    background-color: #a32300;
+  }
+}
+
+@keyframes change {
+  0% {
+    -webkit-background-color: #a32300;
+    background-color: #a32300;
+  }
+  50% {
+    -webkit-background-color: #f53500;
+    background-color: #f53500;
+  }
+  100% {
+    -webkit-background-color: #a32300;
+    background-color: #a32300;
+  }
 }

@@ -1,29 +1,16 @@
-<<<<<<< HEAD
 .sidebar-finish {
   width: 80%;
   height: 80%;
 }
 
-.nadpis-finish {
-=======
-/*header {
->>>>>>> dc156c60b0feb243e428d408181f590f54d40fce
-  font-family: 'Jura', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 0px;
-  color: #f5d000;
-  text-align: center;
-}*/
-
 .gratulace {
-  font-family: 'Roboto' sans-serif;
+  font-family: "Roboto" sans-serif;
   text-align: center;
 }
 
 .shimmer {
   /* styling stuff */
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 300;
   font-size: 3em;
   margin: 0 auto;
@@ -149,7 +136,7 @@ figure {
 }
 
 figcaption {
-  font-family: 'Roboto' sans-serif;
+  font-family: "Roboto" sans-serif;
   font-size: 10px;
   text-align: center;
   color: grey;
@@ -158,7 +145,7 @@ figcaption {
 }
 
 .gratulace {
-  font-family: 'Roboto' sans-serif;
+  font-family: "Roboto" sans-serif;
   font-size: large;
   color: #2c88a0;
   margin-top: 20px;
@@ -170,23 +157,18 @@ button.bublina-final {
   height: 100px;
   text-align: center;
   line-height: 1.4em;
-<<<<<<< HEAD
-  margin-top: 20px;
-  background-color: #a32300;
-=======
   margin-top: 40px;
   background-color: #cc2c00;
->>>>>>> dc156c60b0feb243e428d408181f590f54d40fce
   border: 2px solid darkgrey;
   border-radius: 30px;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 30px;
   color: white;
 }
 
 button.bublina-final:before,
 button.bublina-final:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 0;
   height: 0;

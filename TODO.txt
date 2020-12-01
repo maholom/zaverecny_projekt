@@ -1,5 +1,5 @@
 
-- animace pohybu hrace
+
 - animace roztáčení kostky
 - responzivita pozadi uvod/hra
 
@@ -9,4 +9,4 @@
 ---- NICE TO HAVE
 - zahazovat pouzite otazky
 - po vyhozeni nejakou hlasku
-- audio doprovod
+

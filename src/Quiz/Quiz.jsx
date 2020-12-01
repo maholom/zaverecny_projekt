@@ -1,15 +1,41 @@
 import React, { useState } from "react";
-import { setQuiz, doTurn, isColisionAlert, isFinishAlert } from "../state";
+import {
+  setQuiz,
+  doTurn,
+  isColisionAlert,
+  isFinishAlert,
+  addAskedQuestion,
+} from "../state";
 import { questions } from "../questions.js";
 import { Snowman } from "../Snowman/Snowman.jsx";
 import "./style.css";
 
+const getRandomUnaskedQuestionId = (askedQuestions) => {
+  let found;
+  for (let i = 0; i < 10; i++) {
+    const quetsionIndex = Math.round(Math.random() * (questions.length - 1));
+    if (i === 9 || !askedQuestions.includes(quetsionIndex)) {
+      found = quetsionIndex;
+      break;
+    }
+  }
+  return found;
+};
+
 export const Quiz = ({ state, setState }) => {
-  const [question] = useState(
-    questions[Math.round(Math.random() * (questions.length - 1))]
+  const [questionId] = useState(
+    getRandomUnaskedQuestionId(state.askedQuestions)
   );
-  const [answerId, setAnswerId] = useState(null);
+  const question = questions[questionId];
+  const [answerId, setAnswerId] = useState(null); // id of selected answer
   const answer = answerId !== null ? question.answers[answerId] : null;
+
+  const setAnswerAndRecord = (id) => {
+    if (question.answers[id].value) {
+      setState(addAskedQuestion(state, questionId));
+    }
+    setAnswerId(id);
+  };
 
   let label, action;
   if (isColisionAlert(state)) {
@@ -42,7 +68,7 @@ export const Quiz = ({ state, setState }) => {
         {question.answers.map((currentAnswer, i) => (
           <div
             key={i}
-            onClick={() => (answer ? null : setAnswerId(i))}
+            onClick={() => (answer ? null : setAnswerAndRecord(i))}
             className={`answer ${i === answerId ? "selected" : ""}`}
           >
             <Snowman

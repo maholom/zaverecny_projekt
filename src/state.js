@@ -3,11 +3,12 @@ export const diceMax = 6;
 
 export const initialState = {
   started: true,
-  player: 1,
-  dice: null,
+  player: 2,
+  dice: 6,
   quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
-  player1: 45,
+  player1: 1,
   player2: 0,
+  askedQuestions: []
 };
 
 const anotherPlayer = {
@@ -19,9 +20,13 @@ export const isPlayerInGame = (state, player) => state[`player${player}`] > 0;
 
 export const isColisionAlert = (state) => {
   const pos = getPosition(state, state.player);
-  const nextPos = pos + state.dice;
+  const nextPos = pos === 0 ? 1 : pos + state.dice;
   return state[`player${anotherPlayer[state.player]}`] === nextPos;
 };
+
+export const addAskedQuestion = (state, id) => {
+  return { ...state, askedQuestions: [...state.askedQuestions, id] }
+}
 
 export const isFinishAlert = (state) => {
   const pos = getPosition(state, state.player);

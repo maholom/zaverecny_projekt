@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import useSound from "use-sound";
-import sound from "./sound.mp3";
+import step from "./step.mp3";
 
-const position = [
+const positions = [
   null,
   { x: -198.609, y: 30.056 },
   { x: -180.108, y: 36.015 },
@@ -25,7 +25,7 @@ const position = [
   { x: -163.925, y: 120.85 },
   { x: -145.145, y: 121.5 },
   { x: -125.976, y: 114.878 },
-  { x: -94.831, y: 98.625 },
+  { x: -94.831, y: 98.625 }, // TODO je to dobre ?
   { x: -109.572, y: 107.016 },
   { x: -80.884, y: 90.565 },
   { x: -66.468, y: 81.993 },
@@ -53,19 +53,17 @@ const position = [
 
 export const Figure = ({ position: givenPos, player }) => {
   const [currentPos, setCurrentPos] = useState(givenPos);
-  const { x, y } = position[currentPos];
-  const [play] = useSound(sound);
+  const { x, y } = positions[currentPos];
+  const [play] = useSound(step);
 
   useEffect(() => {
     // animace pohybu
-    let timer;
-    const doIt = () => {
+    let timer = setTimeout(() => {
       if (currentPos !== givenPos) {
         setCurrentPos((pos) => (pos > givenPos ? --pos : ++pos));
         play(); // zvuk
       }
-    };
-    setTimeout(doIt, 200);
+    }, 200);
     return () => clearTimeout(timer);
   }, [givenPos, currentPos]);
 

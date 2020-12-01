@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Plan } from '../Plan/Plan1.jsx';
-import { Quiz } from '../Quiz/Quiz.jsx';
-import { Sidebar } from '../Sidebar/Sidebar.jsx';
-import { SidebarFinish } from '../SidebarFinish/SidebarFinish';
+import React, { useState } from "react";
+import { Plan } from "../Plan/Plan.jsx";
+import { Quiz } from "../Quiz/Quiz.jsx";
+import { Sidebar } from "../Sidebar/Sidebar.jsx";
+import { SidebarFinish } from "../SidebarFinish/SidebarFinish";
 
 import {
   isOverflowAlert,
   isPlayerInGame,
   setStarted,
   isWinner,
-} from '../state';
+} from "../state";
 
 export const Game = ({ state, setState }) => {
   const inGame = isPlayerInGame(state, state.player);

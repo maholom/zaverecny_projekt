@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   setQuiz,
   doTurn,
   isColisionAlert,
   isFinishAlert,
   addAskedQuestion,
-} from "../state";
-import { questions } from "../questions.js";
-import { Snowman } from "../Snowman/Snowman.jsx";
-import "./style.css";
+} from '../state';
+import { questions } from '../questions.js';
+import { Snowman } from '../Snowman/Snowman.jsx';
+import './style.css';
 
 const getRandomUnaskedQuestionId = (askedQuestions) => {
   let found;
@@ -24,7 +24,7 @@ const getRandomUnaskedQuestionId = (askedQuestions) => {
 
 export const Quiz = ({ state, setState }) => {
   const [questionId] = useState(
-    getRandomUnaskedQuestionId(state.askedQuestions)
+    getRandomUnaskedQuestionId(state.askedQuestions),
   );
   const question = questions[questionId];
   const [answerId, setAnswerId] = useState(null); // id of selected answer
@@ -43,17 +43,17 @@ export const Quiz = ({ state, setState }) => {
   } else if (isFinishAlert(state)) {
     label = <span className="alert"> Připrav se na výhru! </span>;
   } else {
-    label = "";
+    label = '';
   }
 
   if (answer && answer.value && isColisionAlert(state)) {
-    action = "Sejmi ho!";
+    action = 'Vyhoď soupeře!';
   } else if (answer && answer.value && isFinishAlert(state)) {
-    action = "Finišuj!";
+    action = 'Pojď do cíle!';
   } else if (answer && answer.value) {
-    action = "Odraž se a jeď!";
+    action = 'Odraž se a jeď!';
   } else {
-    action = "Nech hrát soupeře!";
+    action = 'Nech hrát soupeře!';
   }
 
   return (
@@ -61,7 +61,7 @@ export const Quiz = ({ state, setState }) => {
       <div className="popup">
         <h2 className="quiz-h2">Kvíz</h2>
         <div className="quiz-comment">
-          {" "}
+          {' '}
           Padla ti {state.dice}. Chceš frčet dál? {label} Odpověz správně:
         </div>
         <div className="quiz-question">{question.text}</div>
@@ -69,11 +69,11 @@ export const Quiz = ({ state, setState }) => {
           <div
             key={i}
             onClick={() => (answer ? null : setAnswerAndRecord(i))}
-            className={`answer ${i === answerId ? "selected" : ""}`}
+            className={`answer ${i === answerId ? 'selected' : ''}`}
           >
             <Snowman
               className={`snowmanQuiz ${
-                answer ? (currentAnswer.value ? "right" : "wrong") : ""
+                answer ? (currentAnswer.value ? 'right' : 'wrong') : ''
               }`}
             />
             <div>{currentAnswer.text}</div>
@@ -82,9 +82,9 @@ export const Quiz = ({ state, setState }) => {
         <div className="quiz-evaluated">
           {answer
             ? answer.value
-              ? "Správná odpověď. Gratulujeme!"
-              : "Špatná odpověď. Zkus to příště!"
-            : "Vyber odpověď"}
+              ? 'Správná odpověď. Gratulujeme!'
+              : 'Špatná odpověď. Zkus to příště!'
+            : 'Klikni na odpověď'}
         </div>
         {answer ? (
           <>

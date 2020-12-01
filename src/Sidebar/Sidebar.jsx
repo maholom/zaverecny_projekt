@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   setStarted,
   isPlayerInGame,
@@ -6,11 +6,11 @@ import {
   doTurn,
   isOverflowAlert,
   diceMax,
-} from "../state";
-import { Snowflake } from "../Snowflake/Snowflake.jsx";
-import { Lyzar } from "../Lyzar/Lyzar.jsx";
-import { Dice } from "../Dice/Dice.jsx";
-import "./style.css";
+} from '../state';
+import { Snowflake } from '../Snowflake/Snowflake.jsx';
+import { Lyzar } from '../Lyzar/Lyzar.jsx';
+import { Dice } from '../Dice/Dice.jsx';
+import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
   const inGame = isPlayerInGame(state, state.player);
@@ -19,25 +19,24 @@ export const Sidebar = ({ state, setState }) => {
   if (state.dice === null) {
     // kostka je prázdná
     label = inGame
-      ? "O kolik pojedeš dál?"
-      : "Jsi připraven vyjet na sjezdovku? Hoď kostkou!";
+      ? 'O kolik pojedeš dál? Hoď kostkou.'
+      : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
   } else if (inGame && isOverflowAlert(state)) {
-    label = "Hodil jsi moc.";
-    action = "Hraje kámoš!";
+    label = 'Hodil jsi moc. Klikni na kostku a předej štafetu druhému lyžaři.';
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
     /*label = /*"Pusť se do kvízu! action = 'Máš okno';*/
     // pomocny stav
   } else if (inGame) {
-    action = "Odstrč se a jeď!";
+    action = 'Odstrč se a jeď!';
   } else if (state.dice === diceMax) {
     label = isColisionAlert(state)
-      ? "Vyhazuješ kamaráda ze startu. To se dělá?"
-      : "Padla ti šestka. Připrav se na start!";
-    action = "Zahájit sjezd";
+      ? 'Vyhazuješ kamaráda ze startu. To se dělá?'
+      : 'Padla ti šestka. Připrav se na start!';
+    action = 'Zahájit sjezd';
   } else {
-    label = "Potřebuješ šestku. Hraje kamarád";
-    action = "Ok";
+    label = 'Potřebuješ šestku! Klikni na kostku a nech hrát kamaráda.';
+    action = 'Ok';
   }
 
   //player 1: !inGame, state.dice===diceMax, state.quiz === 0
@@ -81,7 +80,7 @@ export const Sidebar = ({ state, setState }) => {
       </div>
       <div className="div-dice">
         <Dice
-          fill={["#cc2c00", "#cc2c00", "#16502d"][state.player || 0]}
+          fill={['#cc2c00', '#cc2c00', '#16502d'][state.player || 0]}
           value={state.dice}
           onClick={() => setState(doTurn(state, 1, 1))}
         />

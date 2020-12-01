@@ -3,12 +3,12 @@ export const diceMax = 6;
 
 export const initialState = {
   started: true,
-  player: 2,
-  dice: 2,
+  player: 1,
+  dice: 1,
   quiz: true, // null - nebyl vyplnen, true - uspech, false - neuspech
-  player1: 1,
-  player2: 44,
-  askedQuestions: []
+  player1: 45,
+  player2: 3,
+  askedQuestions: [],
 };
 
 const anotherPlayer = {
@@ -25,8 +25,8 @@ export const isColisionAlert = (state) => {
 };
 
 export const addAskedQuestion = (state, id) => {
-  return { ...state, askedQuestions: [...state.askedQuestions, id] }
-}
+  return { ...state, askedQuestions: [...state.askedQuestions, id] };
+};
 
 export const isFinishAlert = (state) => {
   const pos = getPosition(state, state.player);
@@ -71,7 +71,8 @@ export const doTurn = (state) => {
 
   if (inGame && state.quiz === true) {
     //táhnu
-    targetPosition = currentPosition + (isOverflowAlert(state) ? 0 : state.dice);
+    targetPosition =
+      currentPosition + (isOverflowAlert(state) ? 0 : state.dice);
   } else if (!inGame && state.dice === diceMax) {
     //nasazuju
     targetPosition = 1;

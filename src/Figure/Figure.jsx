@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import useSound from "use-sound";
-import step from "./step.mp3";
+import React, { useEffect, useState } from 'react';
+import useSound from 'use-sound';
+import step from './step.mp3';
 
 const positions = [
   null,
@@ -25,8 +25,8 @@ const positions = [
   { x: -163.925, y: 120.85 },
   { x: -145.145, y: 121.5 },
   { x: -125.976, y: 114.878 },
-  { x: -94.831, y: 98.625 }, // TODO je to dobre ?
   { x: -109.572, y: 107.016 },
+  { x: -94.831, y: 98.625 },
   { x: -80.884, y: 90.565 },
   { x: -66.468, y: 81.993 },
   { x: -51.349, y: 75.249 },
@@ -75,7 +75,7 @@ export const Figure = ({ position: givenPos, player }) => {
         transform={`matrix(.92414 0 0 .94581 ${x} ${y})`}
       >
         <ellipse
-          style={{ mixBlendMode: "normal" }}
+          style={{ mixBlendMode: 'normal' }}
           id="ellipse1436-3-8-0-54"
           cx="40.329"
           cy="13.054"
@@ -86,9 +86,9 @@ export const Figure = ({ position: givenPos, player }) => {
           transform="matrix(.99161 -.12927 .15335 .98817 0 0)"
         ></ellipse>
         <path
-          style={{ mixBlendMode: "normal" }}
+          style={{ mixBlendMode: 'normal' }}
           id="path1438-1-2-282-74"
-          fill={["#cc2c00", "#16502d"][player - 1]}
+          fill={['#cc2c00', '#16502d'][player - 1]}
           fillOpacity="1"
           stroke="none"
           strokeOpacity="1"
@@ -96,14 +96,14 @@ export const Figure = ({ position: givenPos, player }) => {
           d="M38.785 8.613a1.725 1.725 0 011.905 1.513c.19 1.22-.087 3.549-.087 3.549s1.841 1.126 2.312 1.483c.985.747.814 1.555-.42 1.1-2.002-.736-2.946-1.105-3.18-1.697-.234-.593-.303-1.848-.303-1.848l-.983.696-5.172-3.573s-.359.424-.576.452c-.219.029-.51-.137-.51-.137l.371-.912-.667-.754.811.302c-.014.002.342-.844.342-.844s.276.15.39.506c.115.356.061.72.061.72l2.226 1.533s.901-1.753 3.48-2.089z"
         ></path>
         <path
-          style={{ mixBlendMode: "normal" }}
+          style={{ mixBlendMode: 'normal' }}
           id="path1440-1-3-07-34"
           fill="#030104"
           strokeWidth="0.723"
           d="M34.505 12.508s4.165 2.733 4.728 3.148c.563.417 1.922 1.536.99 3.579-.912 2-1.916 3.973-1.916 3.973l-.794-.297-1.036-.489s1.337-2.984 1.57-3.55c.232-.564.065-.983-.423-1.327-.472-.333-1.252-.75-1.955-1.209-.695-.453-1.908-1.962-1.164-3.828z"
         ></path>
         <path
-          style={{ mixBlendMode: "normal" }}
+          style={{ mixBlendMode: 'normal' }}
           id="path1442-0-4-94-7"
           fill="none"
           stroke="#030104"

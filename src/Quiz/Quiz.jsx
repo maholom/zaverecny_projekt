@@ -13,9 +13,9 @@ export const Quiz = ({ state, setState }) => {
 
   let label, action;
   if (isColisionAlert(state)) {
-    label = 'Pozor, hrozí kolize!';
+    label = <span className="alert"> Pozor, hrozí kolize! </span>;
   } else if (isFinishAlert(state)) {
-    label = 'Připrav se na výhru!';
+    label = <span className="alert"> Připrav se na výhru! </span>;
   } else {
     label = '';
   }
@@ -27,17 +27,18 @@ export const Quiz = ({ state, setState }) => {
   } else if (answer && answer.value) {
     action = 'Odraž se a jeď!';
   } else {
-    action = 'Hraje kamarád!';
+    action = 'Nech hrát soupeře!';
   }
 
   return (
     <div className="shade">
       <div className="popup">
-        <h2>QUIZ</h2>
-        Hodil jsi {state.dice}. Chceš frčet dál? {label} Odpověz správně: ...
-        <br />
-        {question.text}
-        <br />
+        <h2 className="quiz-h2">Kvíz</h2>
+        <div className="quiz-comment">
+          {' '}
+          Padla ti {state.dice}. Chceš frčet dál? {label} Odpověz správně:
+        </div>
+        <div className="quiz-question">{question.text}</div>
         {question.answers.map((currentAnswer, i) => (
           <div
             key={i}
@@ -49,21 +50,20 @@ export const Quiz = ({ state, setState }) => {
                 answer ? (currentAnswer.value ? 'right' : 'wrong') : ''
               }`}
             />
-            <span>{currentAnswer.text}</span>
+            <div>{currentAnswer.text}</div>
           </div>
         ))}
-        <br />
-        <br />
-        <br />
-        {answer
-          ? answer.value
-            ? 'Gratulujeme!'
-            : 'Špatná odpověď. Zkus to příště!'
-          : 'Vyber odpověď'}
-        <br />
+        <div className="quiz-evaluated">
+          {answer
+            ? answer.value
+              ? 'Správná odpověď. Gratulujeme!'
+              : 'Špatná odpověď. Zkus to příště!'
+            : 'Vyber odpověď'}
+        </div>
         {answer ? (
           <>
             <button
+              className="quiz-btn"
               onClick={() => {
                 setState(doTurn(setQuiz(state, answer.value)));
               }}

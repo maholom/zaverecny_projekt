@@ -1,5 +1,5 @@
 .new-game {
-  background-color: #a32300;
+  background-color: #cc2c00;
   padding: 20px;
   font-family: 'Jura', sans-serif;
   color: white;
@@ -8,9 +8,9 @@
   font-size: 30px;
   border: 2px solid darkgrey;
   border-radius: 30px;
-  transform: translate(100px, -10px);
-  position: relative;
+  transform: translate(80px, -10px);
   cursor: pointer;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 .new-game:before,
@@ -25,7 +25,7 @@
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #a32300 transparent transparent #a32300;
+  border-color: #cc2c00 transparent transparent #cc2c00;
 }
 
 .new-game:hover {
@@ -46,11 +46,7 @@
   display: flex;
   transform: translate(0, 50px);
 }
-.home-placeholder {
-  width: 150px;
-  height: 200px;
-  margin: 0 20px;
-}
+.home-placeholder,
 .lyzar {
   width: 150px;
   height: 200px;
@@ -59,14 +55,15 @@
 
 .infobublina {
   width: 300px;
-  height: 80px;
+  height: 60px;
   text-align: center;
   line-height: 1.5em;
-  border-radius: 10px;
+  border-radius: 30px;
   font-family: 'Roboto', sans-serif;
   padding: 20px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .infobtn {
@@ -94,5 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 30px;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.5);
   margin: 40px 0;
 }

@@ -14,7 +14,7 @@ main {
 
 h2 {
   font-family: 'Jura';
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 5px;
   margin: 0;
 }
@@ -108,13 +108,14 @@ button.bublina {
   height: 100px;
   text-align: center;
   margin: 0;
-  background-color: #a32300;
+  background-color: #cc2c00;
   border: 2px solid darkgrey;
   border-radius: 30px;
   font-family: 'Jura', sans-serif;
   padding: 20px;
   font-size: 30px;
   color: white;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 button.bublina:before,
@@ -136,7 +137,7 @@ button.start:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #a32300 transparent transparent #a32300;
+  border-color: #cc2c00 transparent transparent #cc2c00;
 }
 
 .snowman-uvodni {

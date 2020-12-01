@@ -19,9 +19,8 @@ export const Welcome = ({ startGame }) => {
             Hrají dva lyžaři. Rozdělte si, kdo bude červený a zelený sjezdař.
             Padne-li ti šestka, vyjedeš na sjezdovku. Na každém políčku na tebe
             čeká úkol. Pokud kvíz zodpovíš správně, postoupíš o hozený počet
-            políček. Pokud se netrefíš, zůstaneš na svém políčku, namažeš si
-            lyže a na tahu bude soupeř. Vyhrává ten, kdo jako první sjede z
-            kopce.
+            políček. Pokud se netrefíš, zůstaneš na svém políčku a na tahu bude
+            soupeř. Vyhrává ten, kdo jako první sjede z kopce.
           </div>
           <div>
             <button className="bublina start" onClick={startGame}>
@@ -30,18 +29,17 @@ export const Welcome = ({ startGame }) => {
           </div>
           <Snowman className="snowman-uvodni" />
         </div>
-        <footer>
-          <Logo className="logo" />
-          <div className="container">
-            <p className="paticka">
-              Hra vytvořena během Digitální akademie 2020.
-            </p>
-            <p className="attribution">
-              {' '}
-              Lyžař a vločka designované u kolegů na Vecteezy a Visualpharm.{' '}
-            </p>
-          </div>
-        </footer>
+        <Logo className="logo" />
+        <div className="container">
+          <p className="paticka">
+            Hra vytvořena během Digitální akademie 2020.
+          </p>
+          <p className="attribution">
+            {' '}
+            Lyžař a vločka designované u kolegů na Vecteezy a Visualpharm.{' '}
+          </p>
+        </div>
+        <footer></footer>
       </div>
     </>
   );

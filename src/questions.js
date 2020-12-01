@@ -369,11 +369,11 @@ export const questions = [
         value: false,
       },
       {
-        text: 'Bergrettungstdienst',
+        text: 'Bergrettungsdienst',
         value: true,
       },
       {
-        text: 'Weinachtsmann',
+        text: 'Weihnachtsmann',
         value: false,
       },
     ],
@@ -627,6 +627,116 @@ export const questions = [
       {
         text: 'Overall',
         value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Jaké sis vylosoval startovní pořadí, když uslyšíš číslo ACHT?',
+    answers: [
+      {
+        text: '6',
+        value: false,
+      },
+      {
+        text: '8',
+        value: true,
+      },
+      {
+        text: '1',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co znamená, když na tebe někdo na sjezdovce zakřičí ACHTUNG?',
+    answers: [
+      {
+        text: 'Pozor!',
+        value: true,
+      },
+      {
+        text: 'Dáš si limonádu?',
+        value: false,
+      },
+      {
+        text: 'Svítí sluníčko.',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co to je jódlování?',
+    answers: [
+      {
+        text: 'Skákání do výšky',
+        value: false,
+      },
+      {
+        text: 'Potápění se',
+        value: false,
+      },
+      {
+        text: 'Hlasité zpívání bez textu',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text:
+      'Za chvilku musíš jít z bruslení domů. Jak se zeptáš, kolik je hodin?',
+    answers: [
+      {
+        text: 'Wie spät ist es bitte?',
+        value: true,
+      },
+      {
+        text: 'Wie alt bist du?',
+        value: false,
+      },
+      {
+        text: 'Woher kommst du?',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Jak se jmenuje toto písmenko: ß?',
+    answers: [
+      {
+        text: 'ostré B',
+        value: false,
+      },
+      {
+        text: 'ostré A',
+        value: false,
+      },
+      {
+        text: 'ostré S',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text:
+      'Po celém dni ve sněhu se jdeš navečeřet. Jak se vlastně řekne v němčině večeře?',
+    answers: [
+      {
+        text: 'Mittagessen',
+        value: false,
+      },
+      {
+        text: 'Abendessen',
+        value: true,
+      },
+      {
+        text: 'Kleines Essen',
+        value: true,
       },
     ],
   },

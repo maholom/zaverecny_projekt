@@ -34,7 +34,7 @@ export const Quiz = ({ state, setState }) => {
     <div className="shade">
       <div className="popup">
         <h2>QUIZ</h2>
-        Hodil jsi {state.dice}. Chceš frčet dál? {label} Odpověz správně: ...
+        Hodil jsi {state.dice}. Chceš frčet dál? {label} Odpověz správně:
         <br />
         {question.text}
         <br />

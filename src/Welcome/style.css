@@ -4,13 +4,8 @@
   background-image: url(../Podklady_svg/pozadi.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   margin: 0 auto;
 }
-/*
-main {
-  position: relative;
-}*/
 
 h2 {
   font-family: 'Jura';
@@ -20,9 +15,7 @@ h2 {
 }
 
 div.pravidla {
-  position: absolute;
-  left: 350px;
-  top: 300px;
+  transform: translate(300px, 300px);
   position: relative;
   width: 300px;
   text-align: center;
@@ -60,11 +53,9 @@ div.speech:after {
 }
 
 div.privitani {
-  position: absolute;
-  left: 150px;
-  top: 250px;
+  transform: translate(150px, 250px);
   position: relative;
-  width: 300px;
+  max-width: 200px;
   text-align: center;
   line-height: 1.4em;
   margin: 0px;
@@ -100,12 +91,10 @@ div.rec:after {
 }
 
 button.bublina {
-  position: absolute;
-  left: 450px;
-  bottom: 250px;
+  transform: translate(600px, -300px);
   position: relative;
-  width: 200px;
-  height: 100px;
+  max-width: 200px;
+  max-height: 100px;
   text-align: center;
   margin: 0;
   background-color: #a32300;
@@ -151,6 +140,7 @@ button.start:after {
   border-radius: 50%;
   border: 2px solid white;
   background-color: #164450;
+  margin-left: 20px;
 }
 
 footer {
@@ -164,15 +154,20 @@ footer {
 .container {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
 }
 
 .paticka {
-  font-size: 20px;
+  font-family: 'Roboto' sans-serif;
+  font-size: 16px;
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
 
 .attribution {
+  font-family: 'Roboto' sans-serif;
+  font-size: 12px;
   margin-top: 0px;
   padding-top: 0px;
+  font-style: italic;
 }

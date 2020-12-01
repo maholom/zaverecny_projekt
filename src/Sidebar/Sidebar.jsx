@@ -37,6 +37,10 @@ export const Sidebar = ({ state, setState }) => {
     action = 'Ok';
   }
 
+  //player 1: !inGame, state.dice===diceMax, state.quiz === 0
+  //player 2: inGame, targetPosition ===1
+  //action: 'Jdi si radši namazat lyže. Druhý lyžař tě vyhodil hned na startu.'
+
   return (
     <div className="sidebar">
       <button

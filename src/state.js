@@ -1,12 +1,12 @@
 const fieldCount = 45;
-export const diceMax = 3;
+export const diceMax = 6;
 
 export const initialState = {
   started: true,
   player: 1,
   dice: null,
-  quiz: true, // null - nebyl vyplnen, true - uspech, false - neuspech
-  player1: 44,
+  quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
+  player1: 0,
   player2: 0,
 };
 
@@ -55,7 +55,7 @@ export const doTurn = (state) => {
   if (state.dice === null) {
     return {
       ...state,
-      dice: 1 + Math.round(Math.random() * 2),
+      dice: 1 + Math.round(Math.random() * diceMax - 1),
     };
   }
 

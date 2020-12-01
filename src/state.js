@@ -4,10 +4,10 @@ export const diceMax = 6;
 export const initialState = {
   started: true,
   player: 2,
-  dice: 6,
-  quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
+  dice: 2,
+  quiz: true, // null - nebyl vyplnen, true - uspech, false - neuspech
   player1: 1,
-  player2: 0,
+  player2: 44,
   askedQuestions: []
 };
 
@@ -71,7 +71,7 @@ export const doTurn = (state) => {
 
   if (inGame && state.quiz === true) {
     //táhnu
-    targetPosition = currentPosition + state.dice;
+    targetPosition = currentPosition + (isOverflowAlert(state) ? 0 : state.dice);
   } else if (!inGame && state.dice === diceMax) {
     //nasazuju
     targetPosition = 1;

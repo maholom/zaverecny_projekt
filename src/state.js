@@ -1,5 +1,5 @@
 const fieldCount = 45;
-export const diceMax = 3;
+export const diceMax = 6;
 
 export const initialState = {
   started: false,
@@ -55,7 +55,7 @@ export const doTurn = (state) => {
   if (state.dice === null) {
     return {
       ...state,
-      dice: 1 + Math.round(Math.random() * 2),
+      dice: 1 + Math.round(Math.random() * diceMax - 1),
     };
   }
 

@@ -1,5 +1,5 @@
 .welcome {
-  width: 85%;
+  width: 100%;
   display: block;
   background-image: url(./pozadi.svg);
   background-repeat: no-repeat;
@@ -170,3 +170,67 @@ button.start:after {
   margin: 0;
   font-style: italic;
 }
+
+@media screen and (max-width: 576px) {
+  .sidebar-finish {
+    min-width: 456px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .obrazovka {
+    min-width: 456px;
+    width: 100%;
+  }
+
+  .welcome {
+    padding: 0px;
+  }
+
+  .privitani {
+    transform: translate(190px, -10px);
+  }
+
+  .snowman-uvodni {
+    transform: translate(80px, -250px);
+    margin-left: 0px;
+  }
+
+  .pravidla {
+    transform: translate(90px, 280px);
+    position: relative;
+    width: 300px;
+    text-align: center;
+    line-height: 1.4em;
+    margin: 0px;
+  }
+
+  .pravidla:before,
+  .pravidla:after {
+    display: none;
+  }
+
+  .bublina {
+    transform: translate(10px, -400px);
+  }
+
+  .footer {
+    padding: 0px;
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .logo {
+    margin: 0px;
+  }
+
+  .paticka {
+    font-size: 10px;
+  }
+
+  .attribution {
+    font-size: 8px;
+  }
+}
+
+/*do 576px,  do 768px  , do 1024px*/

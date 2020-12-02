@@ -193,13 +193,3 @@ button.start:after {
   align-items: center;
   padding-top: 0px;
 }
-
-@media screen and (max-width: 576px) {
-  .sidebar-finish {
-    min-width: 450px;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/*do 576px,  do 768px  , do 1024px*/

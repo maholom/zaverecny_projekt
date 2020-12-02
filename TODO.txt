@@ -3,10 +3,6 @@
 - animace roztáčení kostky
 - responzivita pozadi uvod/hra
 
-- hlaska pri vyhazovani na startu
 
 
----- NICE TO HAVE
-- zahazovat pouzite otazky
-- po vyhozeni nejakou hlasku
 

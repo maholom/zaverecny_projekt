@@ -22,10 +22,11 @@ export const Sidebar = ({ state, setState }) => {
       ? 'O kolik pojedeš dál? Hoď kostkou.'
       : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
   } else if (inGame && isOverflowAlert(state)) {
-    label = 'Hodil jsi moc. Klikni na kostku a předej štafetu druhému lyžaři.';
+    label = 'Hodil jsi moc. Klikni na kostku a předej štafetu soupeři.';
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
-    /*label = /*"Pusť se do kvízu! action = 'Máš okno';*/
+    label = 'Pusť se do kvízu!';
+    action = 'Máš okno';
     // pomocny stav
   } else if (inGame) {
     action = 'Odstrč se a jeď!';
@@ -38,10 +39,6 @@ export const Sidebar = ({ state, setState }) => {
     label = 'Potřebuješ šestku! Klikni na kostku a nech hrát kamaráda.';
     action = 'Ok';
   }
-
-  //player 1: !inGame, state.dice===diceMax, state.quiz === 0
-  //player 2: inGame, osition === 1
-  //action: 'Jdi si radši namazat lyže. Druhý lyžař tě vyhodil hned na startu.'
 
   return (
     <div className="sidebar">

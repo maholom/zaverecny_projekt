@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Game } from "../Game/Game.jsx";
-import { Welcome } from "../Welcome/Welcome.jsx";
-import { initialState, setStarted } from "../state";
-import "./style.css";
+import React, { useState } from 'react';
+import { Game } from '../Game/Game.jsx';
+import { Welcome } from '../Welcome/Welcome.jsx';
+import { initialState, setStarted } from '../state';
+import './style.css';
 
 export const App = () => {
   const [state, setState] = useState(initialState);

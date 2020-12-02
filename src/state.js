@@ -2,12 +2,12 @@ const fieldCount = 45;
 export const diceMax = 6;
 
 export const initialState = {
-  started: true,
+  started: false,
   player: 1,
-  dice: 1,
-  quiz: true, // null - nebyl vyplnen, true - uspech, false - neuspech
-  player1: 45,
-  player2: 3,
+  dice: null,
+  quiz: null, // null - nebyl vyplnen, true - uspech, false - neuspech
+  player1: 0,
+  player2: 0,
   askedQuestions: [],
 };
 

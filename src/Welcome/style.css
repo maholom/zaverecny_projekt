@@ -1,5 +1,5 @@
 .welcome {
-  width: 90%;
+  width: 85%;
   display: block;
   background-image: url(../Podklady_svg/pozadi.svg);
   background-repeat: no-repeat;
@@ -142,27 +142,25 @@ button.start:after {
   border-radius: 50%;
   border: 2px solid white;
   background-color: #164450;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .footer {
   display: flex;
-  margin-top: 50px;
   font-size: 16px;
+  padding: 50px 70px;
 }
 .container {
-  padding: 20px;
+  margin: 30px 20px 10px 10px;
 }
 
 .paticka {
   font-size: 16px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: 0;
 }
 
 .attribution {
   font-size: 12px;
-  margin-top: 0px;
-  padding-top: 0px;
+  margin: 0;
   font-style: italic;
 }

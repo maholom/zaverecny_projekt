@@ -29,7 +29,6 @@ export const Welcome = ({ startGame }) => {
           </div>
           <Snowman className="snowman-uvodni" />
         </div>
-
         <footer className="footer">
           <Logo className="logo" />
           <div className="container">

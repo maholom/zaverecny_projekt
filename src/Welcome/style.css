@@ -1,7 +1,7 @@
 .welcome {
   width: 85%;
   display: block;
-  background-image: url(../Podklady_svg/pozadi.svg);
+  background-image: url(./pozadi.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -15,7 +15,7 @@ h2 {
   margin: 0;
 }
 
-div.pravidla {
+.pravidla {
   transform: translate(300px, 300px);
   position: relative;
   width: 300px;
@@ -31,29 +31,29 @@ div.pravidla {
   color: white;
 }
 
-div.pravidla:before,
-div.pravidla:after {
+.pravidla:before,
+.pravidla:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
 }
 
-div.speech:before {
+.speech:before {
   left: 30px;
   bottom: -50px;
   border: 25px solid;
   border-color: darkgrey transparent transparent darkgrey;
 }
 
-div.speech:after {
+.speech:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
   border-color: #164450 transparent transparent #164450;
 }
 
-div.privitani {
+.privitani {
   transform: translate(150px, 250px);
   position: relative;
   max-width: 200px;
@@ -69,29 +69,29 @@ div.privitani {
   color: black;
 }
 
-div.privitani:before,
-div.privitani:after {
+.privitani:before,
+.privitani:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
 }
 
-div.rec:before {
+.rec:before {
   left: 30px;
   bottom: -50px;
   border: 25px solid;
   border-color: darkgrey transparent transparent darkgrey;
 }
 
-div.rec:after {
+.rec:after {
   left: 38px;
   bottom: -30px;
   border: 15px solid;
   border-color: #d5f6ff transparent transparent #d5f6ff;
 }
 
-button.bublina {
+.bublina {
   transform: translate(600px, -300px);
   position: relative;
   max-width: 200px;
@@ -105,10 +105,11 @@ button.bublina {
   padding: 20px;
   font-size: 30px;
   color: white;
+  cursor: pointer;
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-button.bublina:hover {
+.bublina:hover {
   color: grey;
 }
 
@@ -151,6 +152,7 @@ button.start:after {
 
 .footer {
   display: flex;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   padding: 50px 70px;
 }
@@ -160,7 +162,6 @@ button.start:after {
 }
 
 .paticka {
-  font-size: 16px;
   margin: 0;
 }
 

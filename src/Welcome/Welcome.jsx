@@ -38,7 +38,8 @@ export const Welcome = ({ startGame }) => {
             </p>
             <p className="attribution">
               {' '}
-              Lyžař a vločka designované u kolegů na Vecteezy a Visualpharm.{' '}
+              Lyžař a vločka designované u kolegů na Vecteezy a Visualpharm.
+              Hudební efekty ze stránky Zapsplat.com.{' '}
             </p>
           </div>
         </footer>

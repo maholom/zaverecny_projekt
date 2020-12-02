@@ -1,10 +1,14 @@
 import React from 'react';
 import { setStarted } from '../state';
 import { SnowFalling } from '../SnowFalling/SnowFalling';
+import useSound from 'use-sound';
+import fanfara from './fanfara.mp3';
 import './style.css';
 import pohar from './pohar.jpg';
 
 export const SidebarFinish = ({ state, setState }) => {
+  const [play] = useSound(fanfara);
+
   return (
     <>
       <div className="sidebar-finish">
@@ -14,9 +18,9 @@ export const SidebarFinish = ({ state, setState }) => {
           <main>
             <div className="center">
               <figure>
-                <img src={pohar} alt="pohar" />
+                <img src={pohar} alt="pohar" onMouseEnter={() => play()} />
                 <figcaption>
-                  Gold vector created by macrovector - www.freepik.com
+                  Autor obrázku: macrovector, web: freepik.com
                 </figcaption>
               </figure>
               <p className="gratulace">

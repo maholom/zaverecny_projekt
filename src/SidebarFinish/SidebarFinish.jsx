@@ -2,7 +2,7 @@ import React from 'react';
 import { setStarted } from '../state';
 import { SnowFalling } from '../SnowFalling/SnowFalling';
 import './style.css';
-import foto_lyzar_cil from './foto_lyzar_cil.jpg';
+import pohar from './pohar.jpg';
 
 export const SidebarFinish = ({ state, setState }) => {
   return (
@@ -14,8 +14,10 @@ export const SidebarFinish = ({ state, setState }) => {
           <main>
             <div className="center">
               <figure>
-                <img src={foto_lyzar_cil} alt="lyzar v cili" />
-                <figcaption>Photo by Sebastian Staines on Unsplash</figcaption>
+                <img src={pohar} alt="pohar" />
+                <figcaption>
+                  Gold vector created by macrovector - www.freepik.com
+                </figcaption>
               </figure>
               <p className="gratulace">
                 {' '}

@@ -88,7 +88,7 @@ export const Figure = ({ position: givenPos, player }) => {
         <path
           style={{ mixBlendMode: 'normal' }}
           id="path1438-1-2-282-74"
-          fill={['#cc2c00', '#16502d'][player - 1]}
+          fill={['#a32300', '#16502d'][player - 1]}
           fillOpacity="1"
           stroke="none"
           strokeOpacity="1"

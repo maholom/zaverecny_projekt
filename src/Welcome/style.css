@@ -108,7 +108,11 @@ button.bublina {
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-button.bublina:before,
+button.bublina:hover {
+  color: grey;
+}
+
+/*button.bublina:before,
 button.bublina:after {
   content: ' ';
   position: absolute;
@@ -128,7 +132,7 @@ button.start:after {
   bottom: -30px;
   border: 15px solid;
   border-color: #cc2c00 transparent transparent #cc2c00;
-}
+}*/
 
 .snowman-uvodni {
   max-width: 200px;
@@ -150,6 +154,7 @@ button.start:after {
   font-size: 16px;
   padding: 50px 70px;
 }
+
 .container {
   margin: 30px 20px 10px 10px;
 }

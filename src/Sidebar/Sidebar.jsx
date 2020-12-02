@@ -55,7 +55,7 @@ export const Sidebar = ({ state, setState }) => {
         {isPlayerInGame(state, 1) ? (
           <div className="home-placeholder"></div>
         ) : (
-          <Lyzar className="lyzar" fill="#cc2c00" />
+          <Lyzar className="lyzar" fill="#a32300" />
         )}
         {isPlayerInGame(state, 2) ? (
           <div className="home-placeholder"></div>
@@ -80,7 +80,7 @@ export const Sidebar = ({ state, setState }) => {
       </div>
       <div className="div-dice">
         <Dice
-          fill={['#cc2c00', '#cc2c00', '#16502d'][state.player || 0]}
+          fill={['#a32300', '#a32300', '#16502d'][state.player || 0]}
           value={state.dice}
           onClick={() => setState(doTurn(state, 1, 1))}
         />

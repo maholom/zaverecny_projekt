@@ -4,13 +4,13 @@
 }
 
 .gratulace {
-  font-family: "Roboto" sans-serif;
+  font-family: 'Roboto' sans-serif;
   text-align: center;
 }
 
 .shimmer {
   /* styling stuff */
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 300;
   font-size: 3em;
   margin: 0 auto;
@@ -136,7 +136,7 @@ figure {
 }
 
 figcaption {
-  font-family: "Roboto" sans-serif;
+  font-family: 'Roboto' sans-serif;
   font-size: 10px;
   text-align: center;
   color: grey;
@@ -145,7 +145,7 @@ figcaption {
 }
 
 .gratulace {
-  font-family: "Roboto" sans-serif;
+  font-family: 'Roboto' sans-serif;
   font-size: large;
   color: #2c88a0;
   margin-top: 20px;
@@ -158,15 +158,19 @@ button.bublina-final {
   text-align: center;
   line-height: 1.4em;
   margin-top: 40px;
-  background-color: #cc2c00;
+  background-color: #a32300;
   border: 2px solid darkgrey;
   border-radius: 30px;
-  font-family: "Jura", sans-serif;
+  font-family: 'Jura', sans-serif;
   font-size: 30px;
   color: white;
 }
 
-button.bublina-final:before,
+button.bublina-final:hover {
+  color: grey;
+}
+
+/*button.bublina-final:before,
 button.bublina-final:after {
   content: " ";
   position: absolute;
@@ -186,7 +190,7 @@ button.start:after {
   bottom: -30px;
   border: 15px solid;
   border-color: #cc2c00 transparent transparent #cc2c00;
-}
+}*/
 
 .center {
   display: flex;

@@ -1,5 +1,5 @@
 .new-game {
-  background-color: #cc2c00;
+  background-color: #a32300;
   padding: 20px;
   font-family: 'Jura', sans-serif;
   color: white;
@@ -13,7 +13,7 @@
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-.new-game:before,
+/*.new-game:before,
 .new-game:after {
   content: ' ';
   position: absolute;
@@ -25,11 +25,11 @@
   left: 38px;
   bottom: -30px;
   border: 15px solid;
-  border-color: #cc2c00 transparent transparent #cc2c00;
-}
+  border-color: #a32300 transparent transparent #a32300;
+}*/
 
 .new-game:hover {
-  color: black;
+  color: grey;
 }
 
 .homes {
@@ -77,7 +77,7 @@
 }
 
 .player-1 {
-  background-color: #cc2c00;
+  background-color: #a32300;
 }
 
 .player-2 {

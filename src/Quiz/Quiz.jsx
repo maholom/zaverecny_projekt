@@ -13,9 +13,9 @@ import './style.css';
 const getRandomUnaskedQuestionId = (askedQuestions) => {
   let found;
   for (let i = 0; i < 10; i++) {
-    const quetsionIndex = Math.round(Math.random() * (questions.length - 1));
-    if (i === 9 || !askedQuestions.includes(quetsionIndex)) {
-      found = quetsionIndex;
+    const questionIndex = Math.round(Math.random() * (questions.length - 1));
+    if (i === 9 || !askedQuestions.includes(questionIndex)) {
+      found = questionIndex;
       break;
     }
   }
@@ -58,8 +58,8 @@ export const Quiz = ({ state, setState }) => {
 
   return (
     <div className="shade">
-      <div className="popup">
-        <h2 className="quiz-h2">Kvíz</h2>
+      <div className={`popup turn-${state.player}`}>
+        <h2 className={`quiz-h2 on-turn-${state.player}`}>Kvíz</h2>
         <div className="quiz-comment">
           {' '}
           Padla ti {state.dice}. Chceš frčet dál? {label} Odpověz správně:

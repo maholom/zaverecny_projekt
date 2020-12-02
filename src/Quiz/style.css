@@ -16,7 +16,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   border-radius: 30px;
-  border: 8px solid #16502d;
+  border: 8px solid gray;
   padding: 20px;
   text-align: center;
   box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
@@ -43,12 +43,26 @@
     transform: scale(1) rotateZ(360deg);
   }
 }
+.turn-1 {
+  border-color: #cc2c00;
+}
+
+.turn-2 {
+  border-color: #16502d;
+}
 
 .quiz-h2 {
   font-family: 'Jura';
   font-size: 35px;
   color: #a32300;
   padding-bottom: 20px;
+}
+.on-turn-1 {
+  color: #cc2c00;
+}
+
+.on-turn-2 {
+  color: #16502d;
 }
 
 .quiz-comment {

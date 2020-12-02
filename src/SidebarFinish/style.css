@@ -3,14 +3,9 @@
   height: 80%;
 }
 
-.gratulace {
-  font-family: 'Roboto' sans-serif;
-  text-align: center;
-}
-
 .shimmer {
   /* styling stuff */
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 3em;
   margin: 0 auto;
@@ -19,9 +14,7 @@
   text-align: center;
   text-shadow: 1px 1px;
   color: rgba(255, 255, 255, 0.1);
-}
 
-.shimmer {
   /* the shimmer magic */
   background: -webkit-gradient(
     linear,
@@ -120,7 +113,7 @@
   }
 }
 
-img {
+.center img {
   max-width: 200px;
   max-height: 300px;
   border: 5px solid white;
@@ -130,13 +123,13 @@ img {
   margin-bottom: 5px;
 }
 
-figure {
+.center figure {
   margin: 20px;
   margin-top: 0px;
 }
 
-figcaption {
-  font-family: 'Roboto' sans-serif;
+.center figcaption {
+  font-family: 'Roboto', sans-serif;
   font-size: 10px;
   text-align: center;
   color: grey;
@@ -145,18 +138,17 @@ figcaption {
 }
 
 .gratulace {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: large;
+  text-align: center;
   color: #2c88a0;
   margin-top: 20px;
 }
 
-button.bublina-final {
+.bublina-final {
   position: relative;
-  width: 200px;
-  height: 100px;
+  padding: 20px;
   text-align: center;
-  line-height: 1.4em;
   margin-top: 40px;
   background-color: #a32300;
   border: 2px solid darkgrey;
@@ -164,9 +156,11 @@ button.bublina-final {
   font-family: 'Jura', sans-serif;
   font-size: 30px;
   color: white;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-button.bublina-final:hover {
+.bublina-final:hover {
   color: grey;
 }
 

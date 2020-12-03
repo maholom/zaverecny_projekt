@@ -31,13 +31,13 @@ h2 {
   color: white;
 }
 
-.pravidla:before,
+/*.pravidla:before,
 .pravidla:after {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
-}
+}*/
 
 .speech:before {
   left: 30px;
@@ -172,18 +172,9 @@ button.start:after {
 }
 
 @media screen and (max-width: 576px) {
-  .sidebar-finish {
-    min-width: 456px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .obrazovka {
-    min-width: 456px;
-    width: 100%;
-  }
-
   .welcome {
+    min-width: 456px;
+    width: 100%;
     padding: 0px;
   }
 
@@ -200,7 +191,6 @@ button.start:after {
     transform: translate(90px, 280px);
     position: relative;
     width: 300px;
-    text-align: center;
     line-height: 1.4em;
     margin: 0px;
   }
@@ -233,4 +223,93 @@ button.start:after {
   }
 }
 
-/*do 576px,  do 768px  , do 1024px*/
+@media screen and (max-width: 768px) {
+  .welcome {
+    padding: 0px;
+  }
+
+  .privitani {
+    transform: translate(220px, 100px);
+  }
+
+  .snowman-uvodni {
+    transform: translate(100px, -170px);
+    margin-left: 0px;
+  }
+
+  .pravidla {
+    transform: translate(350px, 150px);
+  }
+
+  .pravidla:before,
+  .pravidla:after {
+    display: none;
+  }
+
+  .bublina {
+    transform: translate(400px, -400px);
+  }
+
+  .footer {
+    padding: 0px;
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .logo {
+    margin-left: 50px;
+  }
+
+  .paticka {
+    font-size: 12px;
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bublina {
+    transform: translate(500px, -300px);
+  }
+
+  .pravidla {
+    transform: translate(350px, 200px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    margin: 0;
+    line-height: 1.5em;
+  }
+
+  .bublina {
+    transform: translate(860px, -480px);
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .privitani {
+    transform: translate(170px, 350px);
+    font-size: large;
+    max-width: 300px;
+  }
+
+  .pravidla {
+    transform: translate(550px, 300px);
+    width: 400px;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0px;
+    background-color: #164450;
+    border: 2px solid darkgrey;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    font-size: large;
+  }
+}

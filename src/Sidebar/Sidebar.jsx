@@ -10,6 +10,7 @@ import {
 import { Snowflake } from '../Snowflake/Snowflake.jsx';
 import { Lyzar } from '../Lyzar/Lyzar.jsx';
 import { Dice } from '../Dice/Dice.jsx';
+import { Ski } from '../Ski/Ski.jsx';
 import './style.css';
 
 export const Sidebar = ({ state, setState }) => {
@@ -48,25 +49,28 @@ export const Sidebar = ({ state, setState }) => {
       >
         Nová hra
       </button>
-      <div className="home-lyzari">
-        {isPlayerInGame(state, 1) ? (
-          <div className="home-placeholder"></div>
-        ) : (
-          <Lyzar className="lyzar" fill="#a32300" />
-        )}
-        {isPlayerInGame(state, 2) ? (
-          <div className="home-placeholder"></div>
-        ) : (
-          <Lyzar className="lyzar" fill="#16502d" />
-        )}
+      <div className="container-homes">
+        <div className="home-lyzari">
+          {isPlayerInGame(state, 1) ? (
+            <div className="home-placeholder"></div>
+          ) : (
+            <Lyzar className="lyzar" fill="#a32300" />
+          )}
+          {isPlayerInGame(state, 2) ? (
+            <div className="home-placeholder"></div>
+          ) : (
+            <Lyzar className="lyzar" fill="#16502d" />
+          )}
+        </div>
+        <div className="homes">
+          <Snowflake className="snowflake" />
+          <Snowflake className="snowflake" />
+        </div>
       </div>
-      <div className="homes">
-        <Snowflake className="snowflake" />
-        <Snowflake className="snowflake" />
-      </div>
-      <div className={`infobublina player-${state.player}`}>
-        {label}
-        {/*{action ? (
+      <div className="container-dice">
+        <div className={`infobublina player-${state.player}`}>
+          {label}
+          {/*{action ? (
           <button
             className="infobtn"
             onClick={() => setState(doTurn(state, 1, 1))}
@@ -74,13 +78,17 @@ export const Sidebar = ({ state, setState }) => {
             {action}
           </button>
         ) : null}*/}
+        </div>
+        <div className="div-dice">
+          <Dice
+            fill={['#a32300', '#a32300', '#16502d'][state.player || 0]}
+            value={state.dice}
+            onClick={() => setState(doTurn(state, 1, 1))}
+          />
+        </div>
       </div>
-      <div className="div-dice">
-        <Dice
-          fill={['#a32300', '#a32300', '#16502d'][state.player || 0]}
-          value={state.dice}
-          onClick={() => setState(doTurn(state, 1, 1))}
-        />
+      <div className="div-ski">
+        <Ski />
       </div>
     </div>
   );

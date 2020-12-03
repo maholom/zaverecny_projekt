@@ -1,79 +1,68 @@
 .new-game {
   background-color: #a32300;
-  padding: 20px;
+  padding: 15px;
   font-family: 'Jura', sans-serif;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-size: 30px;
-  border: 2px solid darkgrey;
-  border-radius: 30px;
-  transform: translate(80px, -10px);
-  cursor: pointer;
-  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-/*.new-game:before,
-.new-game:after {
-  content: ' ';
+  font-size: 14px;
+  border: 1px solid darkgrey;
+  border-radius: 20px;
   position: absolute;
-  width: 0;
-  height: 0;
+  top: 40px;
+  right: 10px;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.4);
 }
-
-.new-game:after {
-  left: 38px;
-  bottom: -30px;
-  border: 15px solid;
-  border-color: #a32300 transparent transparent #a32300;
-}*/
 
 .new-game:hover {
   color: grey;
 }
 
+.container-homes {
+  transform: translate(0, -40px);
+}
 .homes {
   display: flex;
-  margin: 0 30px 40px 30px;
+  justify-content: space-around;
 }
 
 .snowflake {
-  width: 150px;
+  width: 70px;
   margin: 0 20px;
 }
 
 .home-lyzari {
   display: flex;
-  transform: translate(0, 50px);
+  justify-content: space-around;
+  transform: translate(0, 40px);
 }
+
 .home-placeholder,
 .lyzar {
-  width: 150px;
-  height: 200px;
+  width: 70px;
+  height: 90px;
   margin: 0 20px;
 }
 
-.infobublina {
-  width: 300px;
-  height: 120px;
-  text-align: center;
-  line-height: 1.5em;
-  border-radius: 30px;
-  font-family: 'Roboto', sans-serif;
-  padding: 20px;
-  font-size: 20px;
-  color: white;
-  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
+.container-dice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(0, -40px);
 }
 
-.infobtn {
-  padding: 7px 20px;
-  margin: 10px;
-  border: 1px solid darkgrey;
-  border-radius: 10px;
-  background-color: white;
-  font-size: 18px;
+.infobublina {
+  width: 70%;
+  text-align: center;
+  line-height: 1.5em;
+  border-radius: 15px;
   font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px 20px;
 }
 
 .player-1 {
@@ -85,14 +74,213 @@
 }
 
 .dice {
-  width: 8pc;
-  height: 8pc;
+  width: 5.5pc;
+  height: 5.5pc;
 }
+
 .div-dice {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
-  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.5);
-  margin: 40px 0;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px 20px 10px 0;
+}
+
+.div-ski {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  .new-game {
+    padding: 20px;
+    font-size: 30px;
+    border: 2px solid darkgrey;
+    border-radius: 30px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
+
+  .homes {
+    display: flex;
+    margin: 0 30px 40px 30px;
+  }
+
+  .snowflake {
+    width: 120px;
+    margin: 0 20px;
+  }
+
+  .home-lyzari {
+    display: flex;
+    transform: translate(0, 60px);
+  }
+
+  .home-placeholder,
+  .lyzar {
+    width: 120px;
+    height: 200px;
+    margin: 0 20px;
+  }
+
+  .infobublina {
+    width: 240px;
+    height: 130px;
+    line-height: 1.5em;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .dice {
+    width: 8pc;
+    height: 8pc;
+  }
+
+  .div-dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .new-game {
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    top: 60px;
+    right: 30px;
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .homes {
+    display: flex;
+    margin: 0 30px 40px 30px;
+  }
+
+  .snowflake {
+    width: 120px;
+    margin: 0 20px;
+  }
+
+  .home-lyzari {
+    display: flex;
+    transform: translate(0, 60px);
+  }
+
+  .home-placeholder,
+  .lyzar {
+    width: 120px;
+    height: 200px;
+    margin: 0 20px;
+  }
+
+  .container-dice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(0, -40px);
+  }
+
+  .infobublina {
+    width: 240px;
+    height: 130px;
+    line-height: 1.5em;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .dice {
+    width: 8pc;
+    height: 8pc;
+  }
+
+  .div-dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.5);
+    margin: 40px 0;
+  }
+
+  .div-ski {
+    display: block;
+    width: 180px;
+    height: auto;
+    transform: translate(60px, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .new-game {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .container-homes {
+    transform: translate(0, 0);
+  }
+  .homes {
+    display: flex;
+    margin: 0 30px;
+  }
+
+  .snowflake {
+    width: 150px;
+    margin: 0 20px;
+  }
+
+  .home-lyzari {
+    display: flex;
+    transform: translate(0, 60px);
+  }
+
+  .home-placeholder,
+  .lyzar {
+    width: 150px;
+    height: 200px;
+    margin: 0 20px;
+  }
+  .container-dice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0, 0);
+  }
+
+  .infobublina {
+    width: 300px;
+    height: 120px;
+    line-height: 1.5em;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px 0;
+    font-size: 20px;
+  }
+
+  .dice {
+    width: 8pc;
+    height: 8pc;
+  }
+
+  .div-dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  .div-ski {
+    width: 180px;
+    height: auto;
+  }
 }

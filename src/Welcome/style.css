@@ -7,9 +7,8 @@
 }
 
 .div-start {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  height: 80px;
 }
 
 .start {
@@ -19,11 +18,16 @@
   border-radius: 20px;
   font-family: 'Jura', sans-serif;
   padding: 15px;
-  font-size: 26px;
   color: white;
   cursor: pointer;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
-  margin: 5px;
+  position: absolute;
+  left: 187px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  margin: 0px;
+  font-size: 30px;
 }
 
 .start:hover {
@@ -109,6 +113,51 @@
   margin: 5px 10px;
 }
 
+@media screen and (min-width: 375px) {
+  .div-start {
+    position: relative;
+    height: 80px;
+  }
+
+  .start {
+    position: absolute;
+    left: 225px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .welcome {
+    background-image: url(./pozadi.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+
+  .privitani {
+    margin-left: 45px;
+  }
+
+  .div-start {
+    position: relative;
+    height: 80px;
+  }
+
+  .start {
+    position: absolute;
+    left: 290px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 30px;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .welcome {
     background-image: url(./pozadi.svg);
@@ -117,11 +166,19 @@
     margin: 0 auto;
   }
 
+  .div-start {
+    position: relative;
+    height: 100px;
+  }
+
   .start {
-    font-size: 28px;
-    padding: 20px;
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
-    margin: 10px;
+    position: absolute;
+    left: 405px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 40px;
   }
 
   .nadpis-privitani,
@@ -133,7 +190,7 @@
   .privitani {
     width: 320px;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     margin: 0px;
   }
@@ -142,7 +199,7 @@
     width: 460px;
     line-height: 1.5;
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .snowman-uvodni {
@@ -170,8 +227,19 @@
     width: 100%;
   }
 
-  .start {
-    margin: 20px;
+  .div-start {
+    position: relative;
+    height: 100px;
+  }
+
+  button.start {
+    position: absolute;
+    left: 580px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 40px;
   }
 
   .nadpis-privitani,
@@ -180,7 +248,7 @@
   }
 
   .container-privitani {
-    margin: 20px 0;
+    margin: 0px;
   }
 
   .privitani {
@@ -201,19 +269,40 @@
     width: 270px;
     height: 310px;
   }
+
   .footer {
     margin: 20px 20px 0 50px;
+  }
+
+  .paticka {
+    font-size: 14px;
+  }
+
+  .attribution {
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .start {
-    margin: 5px;
+  .div-start {
+    position: relative;
+    height: 100px;
+  }
+
+  button.start {
+    position: absolute;
+    left: 800px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 40px;
   }
 
   .container-privitani {
     margin: 0;
   }
+
   .nadpis-privitani,
   .nadpis-pravidla {
     font-size: 26px;
@@ -223,6 +312,10 @@
   .privitani {
     width: 400px;
     font-size: 18px;
+  }
+
+  div.privitani.rec {
+    margin-left: 100px;
   }
 
   .pravidla {
@@ -235,6 +328,7 @@
     width: 250px;
     height: 270px;
   }
+
   .footer {
     margin: 5px 20px 0 70px;
   }
@@ -242,11 +336,46 @@
   .logo {
     margin: 0 20px 0 30px;
   }
+
   .paticka {
     font-size: 14px;
   }
 
   .attribution {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .div-start {
+    position: relative;
+    height: 100px;
+  }
+
+  button.start {
+    position: absolute;
+    left: 1060px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .div-start {
+    position: relative;
+    height: 100px;
+  }
+
+  button.start {
+    position: absolute;
+    left: 1600px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: 0px;
+    font-size: 40px;
   }
 }

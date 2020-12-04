@@ -31,7 +31,7 @@ export const SidebarFinish = ({ state, setState }) => {
                   Das war eine tolle Abfahrt!
                 </p>
                 <button
-                  className="bublina-final start"
+                  className="bublina-final"
                   onClick={() => setState(setStarted(state, false))}
                 >
                   NOVÁ HRA

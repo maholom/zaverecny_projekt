@@ -8,28 +8,33 @@ export const Welcome = ({ startGame }) => {
     <>
       <div className="obrazovka">
         <div className="welcome">
-          <div className="privitani rec">
-            <p className="nadpis-privitani">
-              Herzlich willkommen - Srdečně vítej!
-            </p>
-            Zahraj si, procvič si němčinu, potrap nervy při vyhazování a nauč se
-            pár nových slovíček.
-          </div>
-
-          <div className="pravidla speech">
-            <p className="nadpis-pravidla">Pravidla/Spielregeln:</p>
-            Hrají dva lyžaři. Rozdělte si, kdo bude červený a zelený sjezdař.
-            Padne-li ti šestka, vyjedeš na sjezdovku. Na každém políčku na tebe
-            čeká úkol. Pokud kvíz zodpovíš správně, postoupíš o hozený počet
-            políček. Pokud se netrefíš, zůstaneš na svém políčku a na tahu bude
-            soupeř. Vyhrává ten, kdo jako první sjede z kopce.
-          </div>
-          <div>
-            <button className="bublina start" onClick={startGame}>
+          <div className="div-start">
+            <button className="start" onClick={startGame}>
               START!
             </button>
           </div>
-          <Snowman className="snowman-uvodni" />
+          <div className="container-privitani">
+            <Snowman className="snowman-uvodni" />
+            <div className="privitani rec">
+              <h2 className="nadpis-privitani">
+                Herzlich willkommen - Srdečně vítej!
+              </h2>
+              <p>
+                Zahraj si, procvič si němčinu, potrap nervy při vyhazování a
+                nauč se pár nových slovíček.
+              </p>
+            </div>
+          </div>
+          <div className="pravidla speech">
+            <h2 className="nadpis-pravidla">Pravidla/Spielregeln:</h2>
+            <p>
+              Hrají dva lyžaři. Rozdělte si, kdo bude červený a zelený sjezdař.
+              Padne-li ti šestka, vyjedeš na sjezdovku. Na každém políčku na
+              tebe čeká úkol. Pokud kvíz zodpovíš správně, postoupíš o hozený
+              počet políček. Pokud se netrefíš, zůstaneš na svém políčku a na
+              tahu bude soupeř. Vyhrává ten, kdo jako první sjede z kopce.
+            </p>
+          </div>
         </div>
         <footer className="footer">
           <Logo className="logo" />

@@ -1,16 +1,17 @@
 .sidebar-finish {
-  width: 80%;
-  height: 80%;
+  min-width: 100vw;
+  min-height: 80vh;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(#d5f6ff, #ffffff);
+  transform: translate(0, -360px);
 }
 
 .shimmer {
   /* styling stuff */
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  font-size: 3em;
+  font-size: 38px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 0px;
+  padding-top: 20px;
   text-align: center;
   text-shadow: 1px 1px;
   color: rgba(255, 255, 255, 0.1);
@@ -114,23 +115,20 @@
 }
 
 .center img {
-  max-width: 200px;
-  max-height: 300px;
+  width: 200px;
+  height: 200px;
   border: 5px solid white;
   border-radius: 50%;
   padding: 0px;
-  margin: 20px;
-  margin-bottom: 5px;
+  margin: 20px 0 10px 0;
 }
 
 .center figure {
-  margin: 20px;
-  margin-top: 0px;
+  margin: 20px 20px 0 20px;
 }
 
 .center figcaption {
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
+  font-size: 8px;
   text-align: center;
   color: grey;
   margin: 0px;
@@ -138,8 +136,7 @@
 }
 
 .gratulace {
-  font-family: 'Roboto', sans-serif;
-  font-size: large;
+  font-size: 18px;
   text-align: center;
   color: #2c88a0;
   margin-top: 20px;
@@ -147,44 +144,22 @@
 
 .bublina-final {
   position: relative;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   margin-top: 40px;
   background-color: #a32300;
   border: 2px solid darkgrey;
-  border-radius: 30px;
+  border-radius: 20px;
   font-family: 'Jura', sans-serif;
-  font-size: 30px;
+  font-size: 14px;
   color: white;
   cursor: pointer;
-  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .bublina-final:hover {
   color: grey;
 }
-
-/*button.bublina-final:before,
-button.bublina-final:after {
-  content: " ";
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-button.start:before {
-  left: 30px;
-  bottom: -50px;
-  border: 2px solid;
-  border-color: darkgrey transparent transparent darkgrey;
-}
-
-button.start:after {
-  left: 38px;
-  bottom: -30px;
-  border: 15px solid;
-  border-color: #cc2c00 transparent transparent #cc2c00;
-}*/
 
 .center {
   display: flex;
@@ -194,34 +169,35 @@ button.start:after {
   padding-top: 0px;
 }
 
-@media screen and (min-width: 200px) {
-  .game {
-    display: flex;
-  }
-
-  .sidebar-finish {
-    width: auto;
-    height: 100%;
-  }
-}
-
 @media screen and (min-width: 576px) {
-  .game {
-    display: flex;
-  }
-
   .sidebar-finish {
-    width: auto;
-    height: 100%;
+    min-height: 100vh;
+    transform: translate(0, -570px);
+  }
+  .shimmer {
+    font-size: 44px;
+  }
+  .center img {
+    width: 300px;
+    height: 300px;
+  }
+  .center figcaption {
+    font-size: 10px;
+  }
+  .gratulace {
+    font-size: 24px;
+    margin: 40px;
   }
 
-  .nadpis-finish {
-    align-content: center;
+  .bublina-final {
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .game {
-    display: flex;
-  }
+}
+
+@media screen and (min-width: 1024px) {
 }

@@ -347,15 +347,15 @@ export const questions = [
     text: 'Jaký je led?',
     answers: [
       {
-        text: 'Glatt',
+        text: 'glatt',
         value: true,
       },
       {
-        text: 'Warm',
+        text: 'warm',
         value: false,
       },
       {
-        text: 'Rot',
+        text: 'rot',
         value: false,
       },
     ],
@@ -724,7 +724,7 @@ export const questions = [
 
   {
     text:
-      'Po celém dni ve sněhu se jdeš navečeřet. Jak se vlastně řekne v němčině večeře?',
+      'Po dlouhém dni ve sněhu se jdeš navečeřet. Jak se řekne v němčině večeře?',
     answers: [
       {
         text: 'Mittagessen',
@@ -736,6 +736,60 @@ export const questions = [
       },
       {
         text: 'Kleines Essen',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'S čím se podává Apfelstrudel?',
+    answers: [
+      {
+        text: 'se salámem',
+        value: false,
+      },
+      {
+        text: 's lékořicí',
+        value: false,
+      },
+      {
+        text: 's vanilkovou omáčkou',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Jak se řekne v němčine Člověče, nezlob se?',
+    answers: [
+      {
+        text: 'Mensch ärgere Dich nicht',
+        value: true,
+      },
+      {
+        text: 'Los geht’s!',
+        value: false,
+      },
+      {
+        text: 'Du bist dran!',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Jak bys odstartoval závod: tři dva jedna akce!?',
+    answers: [
+      {
+        text: 'zehn elf zwölf!',
+        value: false,
+      },
+      {
+        text: 'sechs sieben acht!',
+        value: false,
+      },
+      {
+        text: 'drei zwei eins los!',
         value: true,
       },
     ],

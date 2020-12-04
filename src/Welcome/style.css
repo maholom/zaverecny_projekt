@@ -132,7 +132,7 @@
     height: 80px;
   }
 
-  button.start {
+  .start {
     position: absolute;
     left: 225px;
     right: 0px;
@@ -184,7 +184,7 @@
     height: 100px;
   }
 
-  button.start {
+  .start {
     position: absolute;
     left: 405px;
     right: 0px;

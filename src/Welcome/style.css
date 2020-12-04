@@ -15,7 +15,7 @@
   text-align: center;
   background-color: #a32300;
   border: 2px solid darkgrey;
-  border-radius: 20px;
+  border-radius: 30px;
   font-family: 'Jura', sans-serif;
   padding: 15px;
   color: white;
@@ -114,70 +114,28 @@
 }
 
 @media screen and (min-width: 375px) {
-  .div-start {
-    position: relative;
-    height: 80px;
-  }
-
   .start {
-    position: absolute;
     left: 225px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
-    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 425px) {
-  .welcome {
-    background-image: url(./pozadi.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-  }
-
   .privitani {
     margin-left: 45px;
   }
 
-  .div-start {
-    position: relative;
-    height: 80px;
-  }
-
   .start {
-    position: absolute;
     left: 290px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
-    font-size: 30px;
   }
 }
 
 @media screen and (min-width: 576px) {
-  .welcome {
-    background-image: url(./pozadi.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-  }
-
   .div-start {
-    position: relative;
     height: 100px;
   }
 
   .start {
-    position: absolute;
     left: 405px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
     font-size: 40px;
   }
 
@@ -223,23 +181,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .welcome {
-    width: 100%;
-  }
-
-  .div-start {
-    position: relative;
-    height: 100px;
-  }
-
-  button.start {
-    position: absolute;
+  .start {
     left: 580px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
-    font-size: 40px;
   }
 
   .nadpis-privitani,
@@ -284,19 +227,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .div-start {
-    position: relative;
-    height: 100px;
-  }
-
-  button.start {
-    position: absolute;
+  .start {
     left: 800px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
-    font-size: 40px;
   }
 
   .container-privitani {
@@ -347,35 +279,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .div-start {
-    position: relative;
-    height: 100px;
-  }
-
-  button.start {
-    position: absolute;
+  .start {
     left: 1060px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
-    font-size: 40px;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .div-start {
-    position: relative;
-    height: 100px;
-  }
-
-  button.start {
-    position: absolute;
-    left: 1600px;
-    right: 0px;
-    bottom: 0px;
-    top: 0px;
-    margin: 0px;
-    font-size: 40px;
   }
 }

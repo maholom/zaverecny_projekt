@@ -12,7 +12,7 @@
   width: 300px;
   background: white;
   left: calc(50% - 150px);
-  top: calc(40% - 150px);
+  top: calc(40% - 170px);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   border-radius: 30px;
@@ -52,10 +52,9 @@
 }
 
 .quiz-h2 {
-  font-family: 'Jura';
-  font-size: 30px;
+  font-family: 'Jura', sans-serif;
+  font-size: 26px;
   color: #a32300;
-  padding-bottom: 15px;
 }
 .on-turn-1 {
   color: #a32300;
@@ -150,73 +149,66 @@
 
 @media screen and (min-width: 576px) {
   .popup {
-    position: fixed;
-    width: 500px;
-    background: white;
-    left: calc(50% - 250px);
-    top: calc(40% - 200px);
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    border-radius: 30px;
+    width: 440px;
+    left: calc(50% - 220px);
+    top: calc(40% - 180px);
+    font-size: 16px;
     border-width: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
-    -webkit-animation: pop-up 0.65s linear;
-    animation: pop-up 0.65s linear;
+    padding: 15px;
   }
   .quiz-h2 {
-    font-family: 'Jura';
-    font-size: 35px;
-    color: #a32300;
-    padding-bottom: 20px;
+    font-size: 30px;
   }
   .quiz-comment {
     padding-bottom: 10px;
   }
   .alert {
-    color: #a32300;
-    font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
   }
   .quiz-question {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 24px;
   }
   .snowmanQuiz {
     width: 50px;
-    border-radius: 20px;
   }
   .answer {
-    border: 1px solid gray;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px 150px 2px 50px;
+    padding: 2px 100px 2px 50px;
     margin: 10px;
-    cursor: pointer;
   }
   .quiz-evaluated {
     padding: 20px;
   }
   .quiz-btn {
-    background-color: #a32300;
     padding: 20px;
-    color: white;
     font-size: 20px;
-    border: 1px solid darkgrey;
-    border-radius: 20px;
-    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-    -webkit-animation: change 1.2s infinite;
-    animation: change 1.2s infinite;
   }
 }
 
 @media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1024px) {
+  .popup {
+    width: 500px;
+    left: calc(50% - 250px);
+    top: calc(40% - 200px);
+    font-size: 18px;
+    padding: 20px;
+  }
+  .quiz-h2 {
+    font-size: 30px;
+  }
+  .alert {
+    font-size: 20px;
+  }
+  .quiz-question {
+    font-size: 20px;
+  }
+  .snowmanQuiz {
+    width: 50px;
+  }
+  .answer {
+    padding: 2px 130px 2px 60px;
+    margin: 10px;
+  }
+  .quiz-evaluated {
+    padding: 25px;
+  }
 }

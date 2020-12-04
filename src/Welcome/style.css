@@ -57,29 +57,6 @@
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
-/*
-.privitani:before,
-.privitani:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-.rec:before {
-  left: 34px;
-  bottom: -40px;
-  border: 20px solid;
-  border-color: darkgrey transparent transparent darkgrey;
-}
-
-.rec:after {
-  left: 38px;
-  bottom: -30px;
-  border: 15px solid;
-  border-color: #d5f6ff transparent transparent #d5f6ff;
-}
-*/
 .pravidla {
   width: 300px;
   text-align: center;
@@ -94,28 +71,6 @@
   margin: 10px auto;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
-/*
-.pravidla:before,
-.pravidla:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-.speech:before {
-  left: 34px;
-  bottom: -40px;
-  border: 20px solid;
-  border-color: darkgrey transparent transparent darkgrey;
-}
-
-.speech:after {
-  left: 38px;
-  bottom: -30px;
-  border: 15px solid;
-  border-color: #164450 transparent transparent #164450;
-}*/
 
 .snowman-uvodni {
   width: 100px;

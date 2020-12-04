@@ -1,7 +1,7 @@
 import React from 'react';
 import { Snowman } from '../Snowman/Snowman';
-import './style.css';
 import { Logo } from './Logo';
+import './style.css';
 
 export const Welcome = ({ startGame }) => {
   return (

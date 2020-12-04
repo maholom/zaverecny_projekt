@@ -19,7 +19,7 @@
   border-radius: 20px;
   font-family: 'Jura', sans-serif;
   padding: 15px;
-  font-size: 14px;
+  font-size: 26px;
   color: white;
   cursor: pointer;
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
@@ -34,12 +34,15 @@
 .nadpis-pravidla {
   font-family: 'Jura', sans-serif;
   font-size: 16px;
+  margin: 10px 0px;
 }
+
 .container-privitani {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .privitani {
   width: 210px;
   text-align: center;
@@ -115,7 +118,7 @@
   }
 
   .start {
-    font-size: 24px;
+    font-size: 28px;
     padding: 20px;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
     margin: 10px;
@@ -123,13 +126,14 @@
 
   .nadpis-privitani,
   .nadpis-pravidla {
-    font-size: 20px;
+    font-size: 18px;
+    margin: 10px 0px;
   }
 
   .privitani {
     width: 320px;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 10px;
     padding: 10px;
     margin: 0px;
   }
@@ -138,7 +142,7 @@
     width: 460px;
     line-height: 1.5;
     padding: 10px;
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .snowman-uvodni {
@@ -165,6 +169,7 @@
   .welcome {
     width: 100%;
   }
+
   .start {
     margin: 20px;
   }
@@ -173,9 +178,11 @@
   .nadpis-pravidla {
     font-size: 24px;
   }
+
   .container-privitani {
     margin: 20px 0;
   }
+
   .privitani {
     width: 380px;
     font-size: 18px;
@@ -187,6 +194,7 @@
     padding: 0 20px;
     font-size: 18px;
     margin: 50px auto;
+    line-height: 1.5;
   }
 
   .snowman-uvodni {

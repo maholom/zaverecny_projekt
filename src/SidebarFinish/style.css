@@ -193,3 +193,35 @@ button.start:after {
   align-items: center;
   padding-top: 0px;
 }
+
+@media screen and (min-width: 200px) {
+  .game {
+    display: flex;
+  }
+
+  .sidebar-finish {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .game {
+    display: flex;
+  }
+
+  .sidebar-finish {
+    width: auto;
+    height: 100%;
+  }
+
+  .nadpis-finish {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .game {
+    display: flex;
+  }
+}

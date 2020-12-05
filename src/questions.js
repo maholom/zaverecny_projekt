@@ -455,15 +455,15 @@ export const questions = [
     text: 'Co si oblékneš v zimě na ruce?',
     answers: [
       {
-        text: 'Socken',
-        value: false,
-      },
-      {
         text: 'Handschuhe',
         value: true,
       },
       {
-        text: 'Schwimmhose',
+        text: 'Socken',
+        value: false,
+      },
+      {
+        text: 'Badehose',
         value: false,
       },
     ],
@@ -617,12 +617,12 @@ export const questions = [
     text: 'Jaký kroj nosí ženy v Bavorsku?',
     answers: [
       {
-        text: 'Pyjama',
-        value: false,
-      },
-      {
         text: 'Dirndl',
         value: true,
+      },
+      {
+        text: 'Pyjama',
+        value: false,
       },
       {
         text: 'Overall',
@@ -639,12 +639,12 @@ export const questions = [
         value: false,
       },
       {
-        text: '8',
-        value: true,
+        text: '7',
+        value: false,
       },
       {
-        text: '1',
-        value: false,
+        text: '8',
+        value: true,
       },
     ],
   },
@@ -679,7 +679,7 @@ export const questions = [
         value: false,
       },
       {
-        text: 'Hlasité zpívání bez textu',
+        text: 'Tradiční zpěv alpských horalů',
         value: true,
       },
     ],
@@ -731,11 +731,11 @@ export const questions = [
         value: false,
       },
       {
-        text: 'Abendessen',
-        value: true,
+        text: 'Kleines Essen',
+        value: false,
       },
       {
-        text: 'Kleines Essen',
+        text: 'Abendessen',
         value: true,
       },
     ],
@@ -791,6 +791,133 @@ export const questions = [
       {
         text: 'drei zwei eins los!',
         value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Z Mnichova jsi v Alpách co by dup. Jak se Mnichov řekne německy?',
+    answers: [
+      {
+        text: 'Minchen',
+        value: false,
+      },
+      {
+        text: 'Mnichov',
+        value: false,
+      },
+      {
+        text: 'München',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Kdy řekneš v Bavorsku Servus?',
+    answers: [
+      {
+        text: 'Když se přátelsky přivítáš a loučíš.',
+        value: true,
+      },
+      {
+        text: 'Když někomu šlápneš na nohu.',
+        value: false,
+      },
+      {
+        text: 'Když rozbiješ okno.',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co se ve Švýcarsku nejvíce podobá našim bramborákům?',
+    answers: [
+      {
+        text: 'Rösti',
+        value: true,
+      },
+      {
+        text: 'Apfelmus',
+        value: false,
+      },
+      {
+        text: 'Powidl',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'V horách jsi potkal medvěda. Jak zavoláš o pomoc?',
+    answers: [
+      {
+        text: 'Es freut mich!',
+        value: false,
+      },
+      {
+        text: 'Guten Tag!',
+        value: false,
+      },
+      {
+        text: 'Hilfe!',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Instruktor lyžování se tě zeptal - Wie heißt du? - co to znamená?',
+    answers: [
+      {
+        text: 'Kolik ti je let?',
+        value: false,
+      },
+      {
+        text: 'Kde máš lyže?',
+        value: false,
+      },
+      {
+        text: 'Jak se jmenuješ?',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Jsi lyžař začátečník, takže jsi: ?',
+    answers: [
+      {
+        text: 'Anfänger',
+        value: true,
+      },
+      {
+        text: 'Profi',
+        value: false,
+      },
+      {
+        text: 'Fortgeschrittener',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text:
+      'Na obchodě se suvenýry visí cedule s nápisem Geschlossen - co to pro tebe znamená: ?',
+    answers: [
+      {
+        text: 'Je zavřeno.',
+        value: true,
+      },
+      {
+        text: 'Je otevřeno.',
+        value: false,
+      },
+      {
+        text: 'Dnes prodávají jenom gumové medvídky.',
+        value: false,
       },
     ],
   },

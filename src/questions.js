@@ -1265,7 +1265,7 @@ export const questions = [
   },
 
   {
-    text: 'Co si vezmu na záda, když vyrazím na túru??',
+    text: 'Co si vezmu na záda, když vyrazím na túru?',
     answers: [
       {
         text: 'Handtasche',
@@ -1276,7 +1276,7 @@ export const questions = [
         value: true,
       },
       {
-        text: 'Geldtasche',
+        text: 'Geldbeutel',
         value: false,
       },
     ],

@@ -1,7 +1,0 @@
-
-
-- animace roztáčení kostky
-- responzivita pozadi uvod/hragit 
-
-
-

@@ -27,18 +27,14 @@ export const Sidebar = ({ state, setState }) => {
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
     label = 'Pusť se do kvízu!';
-    action = 'Máš okno';
-    // pomocny stav
   } else if (inGame) {
     action = 'Odstrč se a jeď!';
   } else if (state.dice === diceMax) {
     label = isColisionAlert(state)
       ? 'Vyhazuješ kamaráda ze startu. To se dělá?'
       : 'Padla ti šestka. Připrav se na start!';
-    action = 'Zahájit sjezd';
   } else {
     label = 'Potřebuješ šestku! Klikni na kostku a nech hrát kamaráda.';
-    action = 'Ok';
   }
 
   return (
@@ -68,17 +64,7 @@ export const Sidebar = ({ state, setState }) => {
         </div>
       </div>
       <div className="container-dice">
-        <div className={`infobublina player-${state.player}`}>
-          {label}
-          {/*{action ? (
-          <button
-            className="infobtn"
-            onClick={() => setState(doTurn(state, 1, 1))}
-          >
-            {action}
-          </button>
-        ) : null}*/}
-        </div>
+        <div className={`infobublina player-${state.player}`}>{label}</div>
         <div className="div-dice">
           <Dice
             fill={['#a32300', '#a32300', '#16502d'][state.player || 0]}

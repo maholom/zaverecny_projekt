@@ -817,7 +817,7 @@ export const questions = [
     text: 'Kdy řekneš v Bavorsku Servus?',
     answers: [
       {
-        text: 'Když se přátelsky přivítáš a loučíš.',
+        text: 'Když se přivítáš a loučíš.',
         value: true,
       },
       {
@@ -916,7 +916,367 @@ export const questions = [
         value: false,
       },
       {
-        text: 'Dnes prodávají jenom gumové medvídky.',
+        text: 'Dnes prodávají gumové medvídky.',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co získáváme od alpských kraviček?',
+    answers: [
+      {
+        text: 'Mehl',
+        value: false,
+      },
+      {
+        text: 'Milch',
+        value: true,
+      },
+      {
+        text: 'Schokolade',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Ve Švýcarsku se z mléka vyrábí: ?',
+    answers: [
+      {
+        text: 'Fleisch',
+        value: false,
+      },
+      {
+        text: 'Bier',
+        value: false,
+      },
+      {
+        text: 'Käse',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Jakou barvu nenajdeme na německé vlajce?',
+    answers: [
+      {
+        text: 'Blau',
+        value: true,
+      },
+      {
+        text: 'Schwarz',
+        value: false,
+      },
+      {
+        text: 'Gold',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Jaký znak je na švýcarské vlajce?',
+    answers: [
+      {
+        text: 'Kreis',
+        value: false,
+      },
+      {
+        text: 'Kreuz',
+        value: true,
+      },
+      {
+        text: 'Dreieck',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Jak nepopřeju německému kamarádovi dobrou chuť?',
+    answers: [
+      {
+        text: 'Guten Appetit!',
+        value: false,
+      },
+      {
+        text: 'Mahlzeit!',
+        value: false,
+      },
+      {
+        text: 'Gute Nacht!',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Jak se omluvíš, když se s někým srazíš na sjezdovce?',
+    answers: [
+      {
+        text: 'Es tut mir Leid.',
+        value: true,
+      },
+      {
+        text: 'Macht nichts.',
+        value: false,
+      },
+      {
+        text: 'Nichts zu danken.',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co se těží v Alpách?',
+    answers: [
+      {
+        text: 'Zucker',
+        value: false,
+      },
+      {
+        text: 'Salz',
+        value: true,
+      },
+      {
+        text: 'Pfeffer',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Ve kterém rakouském městě se konaly 2x zimní olympijské hry?',
+    answers: [
+      {
+        text: 'Wien',
+        value: false,
+      },
+      {
+        text: 'Linz',
+        value: false,
+      },
+      {
+        text: 'Innsbruck',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Na čem si pochutnám, když dostanu Gugelhupf?',
+    answers: [
+      {
+        text: 'Na bábovce',
+        value: true,
+      },
+      {
+        text: 'Na bramboráku',
+        value: false,
+      },
+      {
+        text: 'Na švestce',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Jak se jmenuje místo, kde jezdíme na sjezdových lyžích?',
+    answers: [
+      {
+        text: 'Straße',
+        value: false,
+      },
+      {
+        text: 'Piste',
+        value: true,
+      },
+      {
+        text: 'Schlange',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Na co čekáme, když čekáme na Skilift?',
+    answers: [
+      {
+        text: 'Na limonádu',
+        value: false,
+      },
+      {
+        text: 'Na pokladnu',
+        value: false,
+      },
+      {
+        text: 'Na vlek',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Z jakého kovu je vyrobena medaile pro vítěze?',
+    answers: [
+      {
+        text: 'Gold',
+        value: true,
+      },
+      {
+        text: 'Bronze',
+        value: false,
+      },
+      {
+        text: 'Eisen',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co dělám, když se věnuji Bergsteigen?',
+    answers: [
+      {
+        text: 'Posilování',
+        value: false,
+      },
+      {
+        text: 'Horolezectví',
+        value: true,
+      },
+      {
+        text: 'Veslování',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co děláme  v zimě na saních?',
+    answers: [
+      {
+        text: 'Fliegen',
+        value: false,
+      },
+      {
+        text: 'Rasieren',
+        value: false,
+      },
+      {
+        text: 'Rodeln',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Co můžu, když je velká zima a málo se obléknu?',
+    answers: [
+      {
+        text: 'frieren',
+        value: true,
+      },
+      {
+        text: 'brennen',
+        value: false,
+      },
+      {
+        text: 'bremsen',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Na čem se nedá lyžovat?',
+    answers: [
+      {
+        text: 'Stuhl',
+        value: true,
+      },
+      {
+        text: 'Snowboard',
+        value: false,
+      },
+      {
+        text: 'Ski',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Kde si můžu půjčit lyže?',
+    answers: [
+      {
+        text: 'Imbiss',
+        value: false,
+      },
+      {
+        text: 'Skiverleih',
+        value: true,
+      },
+      {
+        text: 'Haltestelle',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Který měsíc je první v roce?',
+    answers: [
+      {
+        text: 'September',
+        value: false,
+      },
+      {
+        text: 'Juli',
+        value: false,
+      },
+      {
+        text: 'Januar',
+        value: true,
+      },
+    ],
+  },
+
+  {
+    text: 'Kam mě odvezou, když se na lyžích zraním?',
+    answers: [
+      {
+        text: 'Krankenhaus',
+        value: true,
+      },
+      {
+        text: 'Postamt',
+        value: false,
+      },
+      {
+        text: 'Geschäft',
+        value: false,
+      },
+    ],
+  },
+
+  {
+    text: 'Co si vezmu na záda, když vyrazím na túru??',
+    answers: [
+      {
+        text: 'Handtasche',
+        value: false,
+      },
+      {
+        text: 'Rucksack',
+        value: true,
+      },
+      {
+        text: 'Geldtasche',
         value: false,
       },
     ],

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import useSound from 'use-sound';
+import vyhozeni from './vyhozeni.mp3';
 import {
   setQuiz,
   doTurn,
@@ -38,6 +40,7 @@ export const Quiz = ({ state, setState }) => {
   };
 
   let label, action;
+  const [hraj] = useSound(vyhozeni);
   if (isColisionAlert(state)) {
     label = <span className="alert"> Pozor, hrozí kolize! </span>;
   } else if (isFinishAlert(state)) {
@@ -48,6 +51,7 @@ export const Quiz = ({ state, setState }) => {
 
   if (answer && answer.value && isColisionAlert(state)) {
     action = 'Vyhoď soupeře!';
+    hraj(); //pridat zvuk//
   } else if (answer && answer.value && isFinishAlert(state)) {
     action = 'Pojď do cíle!';
   } else if (answer && answer.value) {

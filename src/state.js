@@ -20,6 +20,12 @@ export const isPlayerInGame = (state, player) => state[`player${player}`] > 0;
 
 export const isColisionAlert = (state) => {
   const pos = getPosition(state, state.player);
+  if (state.dice === null) { // hrac jeste nehazel, kolize nehrozi
+    return false
+  }
+  if (pos === 0 && state.dice !== diceMax) { // hrac nenasazuje, kolize nehrozi
+    return false
+  }
   const nextPos = pos === 0 ? 1 : pos + state.dice;
   return state[`player${anotherPlayer[state.player]}`] === nextPos;
 };

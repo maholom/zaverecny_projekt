@@ -1,40 +1,39 @@
-import React from 'react';
+import React from "react";
 import {
   setStarted,
   isPlayerInGame,
   isColisionAlert,
-  doTurn,
   isOverflowAlert,
   diceMax,
-} from '../state';
-import { Snowflake } from '../Snowflake/Snowflake.jsx';
-import { Lyzar } from '../Lyzar/Lyzar.jsx';
-import { Dice } from '../Dice/Dice.jsx';
-import { Ski } from '../Ski/Ski.jsx';
-import './style.css';
+} from "../state";
+import { Snowflake } from "../Snowflake/Snowflake.jsx";
+import { Lyzar } from "../Lyzar/Lyzar.jsx";
+import { Dice } from "../Dice/Dice.jsx";
+import { Ski } from "../Ski/Ski.jsx";
+import "./style.css";
 
-export const Sidebar = ({ state, setState }) => {
+export const Sidebar = ({ state, setState, onTurn }) => {
   const inGame = isPlayerInGame(state, state.player);
   let label;
   let action;
   if (state.dice === null) {
     // kostka je prázdná
     label = inGame
-      ? 'O kolik pojedeš dál? Hoď kostkou.'
-      : 'Jsi připraven vyjet na sjezdovku? Hoď kostkou!';
+      ? "O kolik pojedeš dál? Hoď kostkou."
+      : "Jsi připraven vyjet na sjezdovku? Hoď kostkou!";
   } else if (inGame && isOverflowAlert(state)) {
-    label = 'Hodil jsi moc. Klikni na kostku a předej štafetu soupeři.';
+    label = "Hodil jsi moc. Klikni na kostku a předej štafetu soupeři.";
   } else if (inGame && state.quiz === null) {
     // quiz je prázdný
-    label = 'Pusť se do kvízu!';
+    label = "Pusť se do kvízu!";
   } else if (inGame) {
-    action = 'Odstrč se a jeď!';
+    action = "Odstrč se a jeď!";
   } else if (state.dice === diceMax) {
     label = isColisionAlert(state)
-      ? 'Vyhazuješ kamaráda ze startu. To se dělá?'
-      : 'Padla ti šestka. Připrav se na start!';
+      ? "Vyhazuješ kamaráda ze startu. To se dělá?"
+      : "Padla ti šestka. Připrav se na start!";
   } else {
-    label = 'Potřebuješ šestku! Klikni na kostku a nech hrát kamaráda.';
+    label = "Potřebuješ šestku! Klikni na kostku a nech hrát kamaráda.";
   }
 
   return (
@@ -67,9 +66,9 @@ export const Sidebar = ({ state, setState }) => {
         <div className={`infobublina player-${state.player}`}>{label}</div>
         <div className="div-dice">
           <Dice
-            fill={['#a32300', '#a32300', '#16502d'][state.player || 0]}
+            fill={["#a32300", "#a32300", "#16502d"][state.player || 0]}
             value={state.dice}
-            onClick={() => setState(doTurn(state, 1, 1))}
+            onClick={onTurn}
           />
         </div>
       </div>

@@ -1,16 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import useSound from 'use-sound';
-import vyhozeni from './vyhozeni.mp3';
-import {
-  setQuiz,
-  doTurn,
-  isColisionAlert,
-  isFinishAlert,
-  addAskedQuestion,
-} from '../state';
-import { questions } from '../questions.js';
-import { Snowman } from '../Snowman/Snowman.jsx';
-import './style.css';
+import React, { useState } from "react";
+import { isColisionAlert, isFinishAlert, addAskedQuestion } from "../state";
+import { questions } from "../questions.js";
+import { Snowman } from "../Snowman/Snowman.jsx";
+import "./style.css";
 
 const getRandomUnaskedQuestionId = (askedQuestions) => {
   let found;
@@ -24,9 +16,9 @@ const getRandomUnaskedQuestionId = (askedQuestions) => {
   return found;
 };
 
-export const Quiz = ({ state, setState }) => {
+export const Quiz = ({ state, setState, onTurn }) => {
   const [questionId] = useState(
-    getRandomUnaskedQuestionId(state.askedQuestions),
+    getRandomUnaskedQuestionId(state.askedQuestions)
   );
   const question = questions[questionId];
   const [answerId, setAnswerId] = useState(null); // id of selected answer
@@ -40,24 +32,23 @@ export const Quiz = ({ state, setState }) => {
   };
 
   let label, action;
-  const [hraj] = useSound(vyhozeni);
+
   if (isColisionAlert(state)) {
     label = <span className="alert"> Pozor, hrozí kolize! </span>;
   } else if (isFinishAlert(state)) {
     label = <span className="alert"> Připrav se na výhru! </span>;
   } else {
-    label = '';
+    label = "";
   }
 
   if (answer && answer.value && isColisionAlert(state)) {
-    action = 'Vyhoď soupeře!';
-    hraj(); //pridat zvuk//
+    action = "Vyhoď soupeře!";
   } else if (answer && answer.value && isFinishAlert(state)) {
-    action = 'Pojď do cíle!';
+    action = "Pojď do cíle!";
   } else if (answer && answer.value) {
-    action = 'Odraž se a jeď!';
+    action = "Odraž se a jeď!";
   } else {
-    action = 'Nech hrát soupeře!';
+    action = "Nech hrát soupeře!";
   }
 
   return (
@@ -65,7 +56,7 @@ export const Quiz = ({ state, setState }) => {
       <div className={`popup turn-${state.player}`}>
         <h2 className={`quiz-h2 on-turn-${state.player}`}>Kvíz</h2>
         <div className="quiz-comment">
-          {' '}
+          {" "}
           Padla ti {state.dice}. Chceš frčet dál? {label} Odpověz správně:
         </div>
         <div className="quiz-question">{question.text}</div>
@@ -73,11 +64,11 @@ export const Quiz = ({ state, setState }) => {
           <div
             key={i}
             onClick={() => (answer ? null : setAnswerAndRecord(i))}
-            className={`answer ${i === answerId ? 'selected' : ''}`}
+            className={`answer ${i === answerId ? "selected" : ""}`}
           >
             <Snowman
               className={`snowmanQuiz ${
-                answer ? (currentAnswer.value ? 'right' : 'wrong') : ''
+                answer ? (currentAnswer.value ? "right" : "wrong") : ""
               }`}
             />
             <div>{currentAnswer.text}</div>
@@ -86,18 +77,13 @@ export const Quiz = ({ state, setState }) => {
         <div className="quiz-evaluated">
           {answer
             ? answer.value
-              ? 'Správná odpověď. Gratulujeme!'
-              : 'Špatná odpověď. Zkus to příště!'
-            : 'Klikni na odpověď'}
+              ? "Správná odpověď. Gratulujeme!"
+              : "Špatná odpověď. Zkus to příště!"
+            : "Klikni na odpověď"}
         </div>
         {answer ? (
           <>
-            <button
-              className="quiz-btn"
-              onClick={() => {
-                setState(doTurn(setQuiz(state, answer.value)));
-              }}
-            >
+            <button className="quiz-btn" onClick={() => onTurn(answer.value)}>
               {action}
             </button>
           </>

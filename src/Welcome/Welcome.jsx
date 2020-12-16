@@ -40,12 +40,13 @@ export const Welcome = ({ startGame }) => {
           <Logo className="logo" />
           <div className="container">
             <p className="paticka">
-              CZECHITAS. Hra vytvořena během Digitální akademie 2020.
+              CZECHITAS. Hru vytvořily Soňa Matějková a Marta Kirchgessner pod
+              vedením mentora Tomáše Randuse během Digitální akademie WEB 2020.
             </p>
             <p className="attribution">
               {' '}
               Lyžař a vločka designované u kolegů na Vecteezy a Visualpharm.
-              Hudební efekty ze stránky Zapsplat.com.{' '}
+              Hudební efekty ze stránky zapsplat.com a freesound.org.{' '}
             </p>
           </div>
         </footer>

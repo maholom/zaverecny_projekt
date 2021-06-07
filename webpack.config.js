@@ -1,49 +1,67 @@
-const path = require('path');
-const CopyPlugin = require('copy-webpack-plugin');
+const path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: "./src/index.jsx",
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, "dist"),
+    filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, "dist"),
     writeToDisk: true,
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         query: {
-          presets: ['@babel/preset-env', '@babel/preset-react'],
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        },
+      },
+      {
+        test: /\.tsx?$/,
+        loader: "babel-loader",
+        query: {
+          presets: [
+            "@babel/preset-env",
+            "@babel/preset-react",
+            "@babel/preset-typescript",
+          ],
+        },
+      },
+      {
+        test: /\.ts?$/,
+        loader: "babel-loader",
+        query: {
+          presets: ["@babel/preset-env", "@babel/preset-typescript"],
         },
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|svg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name]-[hash:6].[ext]',
-              outputPath: 'img',
+              name: "[name]-[hash:6].[ext]",
+              outputPath: "img",
             },
           },
         ],
       },
-       {
+      {
         test: /\.(mp3)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
           },
         ],
       },
@@ -51,9 +69,9 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
+              name: "[name].[ext]",
             },
           },
         ],
@@ -64,8 +82,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'src/assets',
-          to: 'assets',
+          from: "src/assets",
+          to: "assets",
           noErrorOnMissing: true,
         },
       ],

@@ -4,8 +4,8 @@ import { Dice2 } from './Dice2.jsx';
 import { Dice3 } from './Dice3.jsx';
 import { Dice4 } from './Dice4.jsx';
 import { Dice5 } from './Dice5.jsx';
-import { Dice6 } from './Dice6.jsx';
-import { Hazej } from './Hazej.jsx';
+import { Dice6 } from './Dice6';
+import { Hazej } from './Hazej';
 import './style.css';
 
 export const Dice = (props) => {

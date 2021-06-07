@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { isColisionAlert, isFinishAlert, addAskedQuestion } from "../state";
-import { questions } from "../questions.js";
-import { Snowman } from "../Snowman/Snowman.jsx";
+import { questions } from "../questions";
+import { Snowman } from "../Snowman/Snowman";
 import "./style.css";
 
 const getRandomUnaskedQuestionId = (askedQuestions) => {

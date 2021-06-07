@@ -6,10 +6,10 @@ import {
   isOverflowAlert,
   diceMax,
 } from "../state";
-import { Snowflake } from "../Snowflake/Snowflake.jsx";
-import { Lyzar } from "../Lyzar/Lyzar.jsx";
-import { Dice } from "../Dice/Dice.jsx";
-import { Ski } from "../Ski/Ski.jsx";
+import { Snowflake } from "../Snowflake/Snowflake";
+import { Lyzar } from "../Lyzar/Lyzar";
+import { Dice } from "../Dice/Dice";
+import { Ski } from "../Ski/Ski";
 import "./style.css";
 
 export const Sidebar = ({ state, setState, onTurn }) => {
@@ -40,7 +40,7 @@ export const Sidebar = ({ state, setState, onTurn }) => {
     <div className="sidebar">
       <button
         className="new-game"
-        onClick={() => setState(setStarted(state, false))}
+        onClick={() => setState(setStarted( false))}
       >
         Nová hra
       </button>

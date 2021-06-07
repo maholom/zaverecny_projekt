@@ -1,7 +1,7 @@
 import React from "react";
-import { Plan } from "../Plan/Plan.jsx";
-import { Quiz } from "../Quiz/Quiz.jsx";
-import { Sidebar } from "../Sidebar/Sidebar.jsx";
+import { Plan } from "../Plan/Plan";
+import { Quiz } from "../Quiz/Quiz";
+import { Sidebar } from "../Sidebar/Sidebar";
 import { SidebarFinish } from "../SidebarFinish/SidebarFinish";
 import useSound from "use-sound";
 import vyhozeni from "./vyhozeni.mp3";

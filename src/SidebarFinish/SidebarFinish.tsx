@@ -1,12 +1,20 @@
-import React, { useEffect } from 'react';
-import { setStarted } from '../state';
-import { SnowFalling } from '../SnowFalling/SnowFalling';
-import useSound from 'use-sound';
-import fanfara from './fanfara.mp3';
-import './style.css';
-import pohar from './pohar.jpg';
+import * as React from "react";
+import { setStarted, TState } from "../state";
+import { SnowFalling } from "../SnowFalling/SnowFalling";
+import useSound from "use-sound";
+// @ts-ignore
+import fanfara from "./fanfara.mp3";
+import "./style.css";
+// @ts-ignore
+import pohar from "./pohar.jpg";
+import { useEffect } from "react";
 
-export const SidebarFinish = ({ state, setState }) => {
+type TProps = {
+  state: TState;
+  setState: (p: TState) => any;
+};
+
+export const SidebarFinish = ({ state, setState }: TProps) => {
   const [play] = useSound(fanfara);
   useEffect(play);
 
@@ -26,13 +34,13 @@ export const SidebarFinish = ({ state, setState }) => {
                   </figcaption>
                 </figure>
                 <p className="gratulace">
-                  {' '}
+                  {" "}
                   To byl úžasný sjezd! <br />
                   Das war eine tolle Abfahrt!
                 </p>
                 <button
                   className="bublina-final"
-                  onClick={() => setState(setStarted(state, false))}
+                  onClick={() => setState(setStarted(false))}
                 >
                   NOVÁ HRA
                 </button>

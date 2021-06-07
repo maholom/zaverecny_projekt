@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "tsc": "tsc --noEmit"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/preset-typescript": "^7.13.0",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
+    "@types/react": "^17.0.9",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.3.0",
     "css-loader": "^3.5.3",
@@ -27,6 +30,7 @@
     "classnames": "^2.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "typecript": "^0.0.1-security",
     "use-sound": "^2.0.1"
   }
 }

@@ -1,7 +1,19 @@
 const fieldCount = 45;
 export const diceMax = 6;
 
-export const initialState = {
+type TPlayer = 1 | 2;
+
+export type TState = {
+  started: boolean;
+  player: TPlayer;
+  dice: null | number;
+  quiz: null | boolean;
+  player1: number;
+  player2: number;
+  askedQuestions: number[];
+};
+
+export const initialState: TState = {
   started: false,
   player: 1,
   dice: null,
@@ -14,55 +26,73 @@ export const initialState = {
 const anotherPlayer = {
   1: 2,
   2: 1,
+} as const;
+
+export const isPlayerInGame = (state: TState, player: TPlayer) => {
+  if (player === 1) {
+    return state[`player1`] > 0;
+  } else {
+    return state[`player2`] > 0;
+  }
 };
 
-export const isPlayerInGame = (state, player) => state[`player${player}`] > 0;
-
-export const isColisionAlert = (state) => {
+export const isColisionAlert = (state: TState) => {
   const pos = getPosition(state, state.player);
-  if (state.dice === null) { // hrac jeste nehazel, kolize nehrozi
-    return false
+  if (state.dice === null) {
+    // hrac jeste nehazel, kolize nehrozi
+    return false;
   }
-  if (pos === 0 && state.dice !== diceMax) { // hrac nenasazuje, kolize nehrozi
-    return false
+  if (pos === 0 && state.dice !== diceMax) {
+    // hrac nenasazuje, kolize nehrozi
+    return false;
   }
   const nextPos = pos === 0 ? 1 : pos + state.dice;
-  return state[`player${anotherPlayer[state.player]}`] === nextPos;
+  return state.player === 1
+    ? state[`player2`] === nextPos
+    : state[`player1`] === nextPos;
 };
 
-export const addAskedQuestion = (state, id) => {
+export const addAskedQuestion = (state: TState, id: number) => {
   return { ...state, askedQuestions: [...state.askedQuestions, id] };
 };
 
-export const isFinishAlert = (state) => {
+export const isFinishAlert = (state: TState) => {
   const pos = getPosition(state, state.player);
+  if (state.dice === null) throw new Error("Dice is null");
   const nextPos = pos + state.dice;
   return nextPos === fieldCount;
 };
 
-export const isOverflowAlert = (state) => {
+export const isOverflowAlert = (state: TState) => {
   const pos = getPosition(state, state.player);
+  if (state.dice === null) throw new Error("Dice is null");
   const nextPos = pos + state.dice;
   return nextPos > fieldCount;
 };
 
-export const isWinner = (state) => {
+export const isWinner = (state: TState) => {
   return state.player1 === fieldCount || state.player2 === fieldCount;
 };
 
-export const getPosition = (state, player) => state[`player${player}`];
+export const getPosition = (state: TState, player: TPlayer) => {
+  if (player === 1) {
+    return state[`player1`];
+  } else {
+    return state[`player2`];
+  }
+};
 
-export const setStarted = (state, started) => ({
+export const setStarted = (started: boolean) => ({
   ...initialState,
   started: started,
 });
 
-export const setQuiz = (state, result) => ({
+export const setQuiz = (state: TState, result: boolean) => ({
   ...state,
   quiz: result,
 });
 
-export const doTurn = (state) => {
+export const doTurn = (state: TState) => {
   if (state.dice === null) {
     return {
       ...state,
